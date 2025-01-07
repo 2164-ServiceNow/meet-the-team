@@ -8,24 +8,68 @@
     <!-- head element is the metadata -->
     <head>
         <title>Look at this madman Charles</title>
+        
+         <!-- external styling using a linked file -->
+         <link rel="stylesheet" href="./introduction-charles-jester.css" />
+        <!-- interal styling of CSS is the middle form -->
+         <style>
+            /* element selector  */
+            li {
+                font-family: fantasy;
+                background-color: red;
+            }
+
+            /* multi-element selector */
+            h3, p {
+                background-color: aquamarine;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            /* id selector - id is more specifc so it take priority over class selectors*/
+            #hobbyWhy, #hobbyPass {
+                background-color: black;
+            }
+
+            /* Class selector */
+            .hobby-form-input {
+                background-color: chartreuse;
+            }
+
+            .hobby-label-font {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: x-large;
+                color: aliceblue;
+            }
+
+            .hobby-label-background{
+                background-color: darkgoldenrod;
+                background-image: url('./images/Image\ \(1\).jfif');
+            }
+
+            td {
+                border: solid 3px;
+            }
+         </style>
+         
     </head>
     <!-- body element contains all of our content -->
     <body>
         <!-- header elements are from 1-6, where the higher the number the smaller the size of text -->
         <!-- alt + left-click adds additional cursors -->
-        <h1>Charles Albert Jester III, coding wizard!</h1>
+         <!-- attritbue for style -->
+        <h1 style="background-color: rgba(54, 129, 129, 0.752); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Charles Albert Jester III, coding wizard!</h1>
         <h3>of Philadelphia, Pennsylvania (Go Birds!)</h3>
         <!-- paragraph element this is for blocks of text -->
         <p>Some fun facts about me is:</p>
         <!-- ordered list (ol) element is a list that counts each subsequent item or a numbered list -->
         <!-- unordered list (ul) element creating a bulleted list -->
-        <ul>
-            <li>I have a black belt in Tae Kwon Do</li>
+        <ul style="background-color: blueviolet;">
+            <li style="background-color: yellow;">I have a black belt in Tae Kwon Do</li>
             <li>Has a Bachelor's Degree in Biology</li>
             <!-- shift + alt + arrowkey (down or up) to copy a line of code in vscode-->
             <li>I've built every peice of furniture in my room</li>
             <li>I have a 90lb bernese mountain dog who will make an appearance in this</li>
-            <li>I have been training associates for over 3 years, and placed over 500 assocaites in all different forms of technology. Java with Spring boot, python, oracle sql to even automotive embedded systems</li>
+            <li style="background-color: yellow;">I have been training associates for over 3 years, and placed over 500 assocaites in all different forms of technology. Java with Spring boot, python, oracle sql to even automotive embedded systems</li>
         </ul>
         
         <!-- marquee is an oldschool animation element for moving text acros a page -->
@@ -50,11 +94,11 @@
                     <!-- table data (td) element is for EACH record in EACH column, goes in order of the columns listed in thead -->
                      <!-- table data is an INLINE element, meaning it wil continue to the end of the page before it starts a new line -->
                     <td>Gaming</td>
-                    <td>25 years</td>
+                    <td><marquee>25 years</marquee></td>
                     <td>Advid gamer for my entire life, nice escape from reality</td>
                 </tr>
                 <tr>
-                    <td>Woodworking</td>
+                    <td style="border: solid 3px;">Woodworking</td>
                     <td>7 yrs</td>
                     <td>I like to build things from scratch with my hands</td>
                 </tr>
@@ -71,28 +115,28 @@
          <form>
             <!-- label is just text to be associated with an input or really anything -->
             <!-- for attribute binds the label to the named input, this must match the id attribute -->
-            <label for="hobbyName">Hobby Name</label>
+            <label class="hobby-label-font hobby-label-background" for="hobbyName">Hobby Name</label>
             <!-- placeholder atribute to fill in the empty space for our input field until an entry or text is added -->
              <!-- id element is a UNIQUE identifier for a single element in an HTML doc -->
-            <input id="hobbyName" placeholder="Type out Hobby Name Here"/>
+            <input class="hobby-form-input" id="hobbyName" placeholder="Type out Hobby Name Here"/>
             <br/>
 
-            <label for="hobbyLength">Length in Years</label>
-            <input id="hobbyLength" placeholder="Length you've done hobby"/>
+            <label class="hobby-label-font hobby-label-background" for="hobbyLength">Length in Years</label>
+            <input class="hobby-form-input" id="hobbyLength" placeholder="Length you've done hobby"/>
             <br/>
 
-            <label for="hobbyWhy">Why I do it?!</label>
-            <input id="hobbyWhy" placeholder="Why do you do this hobby?"/>
+            <label class="hobby-label-font hobby-label-background" for="hobbyWhy">Why I do it?!</label>
+            <input class="hobby-form-input" id="hobbyWhy" placeholder="Why do you do this hobby?"/>
             <hr/>
 
-            <label for="hobbyConfirm">Confirm you'd like to Add this Record?</label>
-            <input id="hobbyConfirm" type="checkbox"/>
+            <label class="hobby-label-font hobby-label-background" for="hobbyConfirm">Confirm you'd like to Add this Record?</label>
+            <input class="hobby-form-input" id="hobbyConfirm" type="checkbox"/>
             <br/>
 
-            <label for="hobbyPass">Password</label>
-            <input id="hobbyPass" type="password" placeholder="Password to update info"/>
+            <label class="hobby-label-font hobby-label-background" for="hobbyPass">Password</label>
+            <input class="hobby-form-input" id="hobbyPass" type="password" placeholder="Password to update info"/>
 
-            <input type="submit"/>
+            <input class="hobby-form-input" type="submit"/>
          </form>
          
     </body>
