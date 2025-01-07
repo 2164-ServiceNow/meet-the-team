@@ -1,0 +1,6 @@
+table,th,td,tr{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    background-color: blanchedalmond;
+    border: solid salmon;
+}
