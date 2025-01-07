@@ -1,0 +1,89 @@
+body {
+    background-color: lightgray; 
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px; 
+    color: blue; /* This gets overwritten */
+}
+
+.image-button img {
+    display: none; 
+}
+  
+.image-button:active img {
+    display: inline; /* Show the image only while the button is being clicked */
+}
+
+#Miami {
+    background-image: url("Miami.png");
+    background-position: center;
+    width: 200px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    text-align: center; /* Center the text */
+    vertical-align: middle; /* Align text vertically */
+    background-repeat: no-repeat;
+    color: aquamarine;
+    background-size: cover;
+}
+
+#Philly {
+    background-image: url("philly.png");
+    background-position: center;
+    width: 200px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    text-align: center; /* Center the text */
+    vertical-align: middle; /* Align text vertically */
+    background-repeat: no-repeat;
+    color: blueviolet;
+    background-size: cover;
+
+}
+
+table, th, td, tr {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: yellow;
+    font-size: xx-large;
+    border: solid;
+    border-width: 10px;
+    border-color: green;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 15px 15px 15px 15px;
+}
+
+#PC {
+    color: green;
+    
+}
+
+#MC {
+    color: aqua;
+    
+}
+
+#oran {
+    color: orange;
+}
+
+#MCD {
+    background-image: url("MCD.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+
+}
+
+#Nic {
+    background-image: url("sir.webp");
+    background-position: center;
+    color: red;
+}
+
+form {
+    color: red;
+    background-color: moccasin;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
