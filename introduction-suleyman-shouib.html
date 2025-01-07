@@ -1,18 +1,61 @@
 <!DOCTYPE html>
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Introduction - Suleyman Shouib</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+            #cubs{
+                background-color: blue;
+                color: red;
+            }
+
+            #blackhawks{
+                background-color: red;
+                color: white;
+            }
+
+            #england{
+                background-color: white;
+                color: red;
+            }
+
+            html{
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+
+            table, th, td{
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                border: 1px solid white;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+
+            ul{
+                display: inline-block;
+            }
+
+            li{
+                text-align: left;
+            }
+        </style>
     </head>
+
     <body>
-        <h1>Hello! My name is Suleyman Shouib!</h1>
-        <p>You can also just call me Sully</p>
+        <h1 style="margin-bottom: 1px;">Hello! My name is Suleyman Shouib!</h1>
+        <p style="margin-top: 1px;">You can also just call me Sully</p>
         <h3>I am from Bartlett, Illinois</h3>
 
         <h2>Here are some fun facts about me!</h2>
         <ul>
-            <li>I did archery for 8 years (olympic recurve)</li>
+            <li>I did archery for 8 years (I shot olympic recurve)</li>
             <li>I've participated in competitive videogame tournaments for Super Smash Brothers, winning a bit of cash throughout my "career"</li>
             <li>I went to the University of Colorado Colorado Springs from 2019-2023 and graduated with a Computer Science degree</li>
         </ul>
@@ -26,31 +69,31 @@
             <tbody>
                 <tr>
                     <td>Baseball</td>
-                    <td>The Cubs</td>
+                    <td id="cubs">The Cubs</td>
                 </tr>
                 
                 <tr>
                     <td>Hockey</td>
-                    <td>The Blackhawks</td>
+                    <td id="blackhawks">The Blackhawks</td>
                 </tr>
 
                 <tr>
                     <td>National Soccer</td>
-                    <td>England</td>
+                    <td id="england">England</td>
                 </tr>
             </tbody>
         </table>
 
         <h2>Here is a list of my favorite videogames! Everything is ordered too.</h2>
-        <img src="https://cdn.discordapp.com/attachments/1219465701778133065/1300618359624171550/chart.png?ex=677e707d&is=677d1efd&hm=272e9ae090420d572b3fdf550d9550adf85073bda6295b7f6e98fb1fae13b9d0&" alt="Sully's Top 25 favorite videogames"/>
+        <img src="https://cdn.discordapp.com/attachments/1219465701778133065/1300618359624171550/chart.png?ex=677e707d&is=677d1efd&hm=272e9ae090420d572b3fdf550d9550adf85073bda6295b7f6e98fb1fae13b9d0&" alt="Sully's Top 25 favorite videogames" width="1000px" height="700px"/>
 
         <p>If you have any disagreements, submit a complaint below (jk there's no implementation for that, but you can pretend)</p>
 
         <form>
             <label for="complaintBox">Enter complaint here</label>
-            <input id="complaintBox" placeholder="No complaints at all! This is the best list of all time!"/>
+            <input id="complaintBox" placeholder="This is the best list of all time"/>
 
-            <marquee>
+            <marquee scrollamount="50">
                 <input type="submit" value="Submit... If you can!"/>
             </marquee>
         </form>
