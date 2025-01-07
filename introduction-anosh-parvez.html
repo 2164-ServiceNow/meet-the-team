@@ -1,15 +1,59 @@
-My Name is Anosh Parvez. I live in NY. This is my first Job in USA.
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scalce="1.0" />
     <title>Intorduction - Anosh Parvez</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h1 {
+        background-color: aquamarine;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        color: black;
+      }
+      h2 {
+        background-color: burlywood;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: black;
+      }
+      .paragraph-class {
+        background-color: chocolate;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+      }
+      li,
+      ul {
+        background-color: blueviolet;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+        color: aquamarine;
+      }
+
+      label {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bold;
+        width: 300px;
+        color: brown;
+      }
+
+      .text-box-class {
+        border: 2px, brown;
+        border-style: dotted;
+        width: 200px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: aquamarine;
+        margin: 5px;
+      }
+    </style>
   </head>
   <body>
     <h1>Anosh Parvez, Novice Programmer</h1>
     <h2>Looking for some exciting new things to learn</h2>
-    <p>Some Fun Facts about me</p>
+    <p class="paragraph-class">Some Fun Facts about me</p>
     <ul>
       <li>I have a Master's Degree in Geophysics</li>
       <li>I learned programming for the first time in 2005</li>
@@ -48,29 +92,44 @@ My Name is Anosh Parvez. I live in NY. This is my first Job in USA.
     />
 
     <form>
-      <label for="hobbyName">Hobby Name</label>
-      <input id="hobbyName" placeholder="Input Hobby here" />
-
-      <label for="hobbyLength">Hobby Name</label>
+      <label for="hobbyName">Hobby Name: </label>
       <input
+        class="text-box-class"
+        id="hobbyName"
+        placeholder="Input Hobby here"
+      />
+      <br />
+      <label for="hobbyLength">How Long have you done it? </label>
+      <input
+        class="text-box-class"
         id="hobbyLength"
         placeholder="Input how long you have been doing it here"
       />
+      <br />
+      <label for="reasonForDoing">Reason: </label>
+      <input
+        class="text-box-class"
+        id="reasonForDoing"
+        placeholder="Why do you do this activity?"
+      />
 
-      <label for="reasonForDoing">Hobby Name</label>
-      <input id="reasonForDoing" placeholder="Why do you do this activity?" />
-
-      <p>Would you recommend this to others?</p>
+      <p class="paragraph-class">Would you recommend this to others?</p>
       <label>
         <input type="radio" name="hobbyRecommendation" value="yes" />
         yes </label
       ><br />
       <label>
-        <input type="radio" name="hobbyRecommendation" value="no" /> no
+        <input type="radio" name="hobbyRecommendation" value="no" />
+        no
       </label>
       <br />
       <label for="yourPass">Password</label>
-      <input id="yourPass" type="password" placeholder="Enter Password" />
+      <input
+        class="text-box-class"
+        id="yourPass"
+        type="password"
+        placeholder="Enter Password"
+      />
 
       <input type="submit" title="Make Recommendation" />
     </form>
