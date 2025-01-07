@@ -26,11 +26,14 @@
 
         <table>
             <thead>
-                <th>NFL Team</th>
-                <th>Primary Colors</th>
-                <th>Playoffs?</th>
-                <th>Head Coach</th>
+                <div class="container">
+                    <th>NFL Team</th>
+                    <th>Primary Colors</th>
+                    <th>Playoffs?</th>
+                    <th>Head Coach</th>
+                </div>
             </thead>
+            
             <hr/>
 
             <tbody>
@@ -55,35 +58,27 @@
         <hr/>
 
 
-        <form>
+        <form class="flex-center">
             <label for="favTeam">What is your favorite NFL team?</label>
             <input id="favTeam" placeholder="Type team here!"/>
             <input type="submit"/>
             <br>
             <label for="animal">Choose the animal you like the most!:</label>
-
-                <select name="animals" id="animals">
+            <select name="animals" id="animals">
                 <option value="Duck">Duck</option>
                 <option value="Dog">Dog</option>
                 <option value="Cat">Cat</option>
                 <option value="Pig">Pig</option>
-                </select>
+            </select>
             <br>
-                <label for="animalWhy">Why do you like this one the best?</label>
-
-                <input id="animalWhy" placeholder="Type your reasoning"/> 
-                <input type="submit"/>
-
-
+            <label for="animalWhy">Why do you like this one the best?</label>
+            <input id="animalWhy" placeholder="Type your reasoning"/> 
+            <input type="submit"/>
             <br>
             <label for="animal-like">How much do you like this animal?</label>
             <input type="range" id="animal-like" name="animal-like" min="0" max="100" value="50">
-            
-
-                
-
-                <hr/>
         </form>
+        
 
     </body>
 </html>

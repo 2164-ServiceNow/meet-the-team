@@ -2,27 +2,36 @@ body {
     background-color: lightgray; 
 }
 
+
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px; 
     color: blue; /* This gets overwritten */
 }
+.flex-center {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    gap: 10px; 
+}
+
 
 .image-button img {
     display: none; 
 }
   
 .image-button:active img {
-    display: inline; /* Show the image only while the button is being clicked */
+    display: inline; 
 }
 
 #Miami {
     background-image: url("Miami.png");
     background-position: center;
-    width: 200px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    text-align: center; /* Center the text */
-    vertical-align: middle; /* Align text vertically */
+    width: 200px; 
+    height: 150px; 
+    text-align: center; 
+    vertical-align: middle; 
     background-repeat: no-repeat;
     color: aquamarine;
     background-size: cover;
@@ -31,10 +40,10 @@ p {
 #Philly {
     background-image: url("philly.png");
     background-position: center;
-    width: 200px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    text-align: center; /* Center the text */
-    vertical-align: middle; /* Align text vertically */
+    width: 200px; .
+    height: 150px; 
+    text-align: center; 
+    vertical-align: middle; 
     background-repeat: no-repeat;
     color: blueviolet;
     background-size: cover;
