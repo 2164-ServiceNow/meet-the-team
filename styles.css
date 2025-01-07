@@ -1,0 +1,103 @@
+:root
+{
+    font-family:'Courier New', Courier, monospace;
+}
+
+html, body
+{
+    margin: 0;
+    background: rgb(245, 180, 130);
+    color: sienna;
+    text-shadow: 0 0 0.1vmin sienna;
+}
+
+header
+{
+    margin: 0;
+    background: #785548;
+    padding: 1vh 1vw;
+    color: #f7da9a;
+    text-shadow: 0 0 1vmin #e7a26a;
+}
+
+marquee
+{
+    padding: 1vh 0;
+    background: #614526;
+    color: #f7da9a;
+}
+
+h2
+{
+    margin: 0;
+}
+
+table
+{
+    margin: 0 0 0 2vw;
+}
+
+table, th, td
+{
+    border: 0.2vmin solid;
+}
+
+th
+{
+    padding: 1vh 1vw;
+}
+
+table img
+{
+    max-height: 100px;
+}
+
+li
+{
+    padding: 0 1vw 0 0;
+}
+
+form
+{
+    margin: 2vh 2vw;
+    border: 0.5vmin solid;
+    width: 25vw;
+    text-align: center;
+}
+
+tr > *:first-child
+{
+    text-align: center;
+}
+
+#orderName
+{
+    background: white;
+    margin: 1vh 0;
+}
+
+#submitButton
+{
+    margin: 1vh 0;
+    padding: 0.5vh 0.5vw;
+    background: sienna;
+    color: #f7da9a;
+    border: none;
+}
+
+#submitButton:hover
+{
+    box-shadow: 0 0 0.2vmin 0.1vmin sienna;
+}
+
+.bumpLeft
+{
+    position: relative;
+    left: 1vw;
+}
+
+input
+{
+    background: sienna;
+    accent-color: sienna;
+}
