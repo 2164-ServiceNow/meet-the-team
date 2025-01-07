@@ -1,0 +1,3 @@
+NAME : N sowmiya
+FROM : Mogappair,Chennai.
+FUN FACT : Sowmiya: Java ninja by day, Python pro by night, and a dog-rescuing, dance-loving superhero 24/7! 
