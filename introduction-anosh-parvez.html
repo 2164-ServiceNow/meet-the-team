@@ -4,134 +4,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scalce="1.0" />
     <title>Intorduction - Anosh Parvez</title>
-    <link rel="stylesheet" href="./style.css" />
-    <style>
-      h1 {
-        background-color: aquamarine;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bolder;
-        color: black;
-      }
-      h2 {
-        background-color: burlywood;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-        color: black;
-      }
-      .paragraph-class {
-        background-color: chocolate;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: black;
-      }
-      li,
-      ul {
-        background-color: blueviolet;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
-        color: aquamarine;
-      }
-
-      label {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-weight: bold;
-        width: 300px;
-        color: brown;
-      }
-
-      .text-box-class {
-        border: 2px, brown;
-        border-style: dotted;
-        width: 200px;
-        height: 20px;
-        border-radius: 5px;
-        background-color: aquamarine;
-        margin: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Anosh Parvez, Novice Programmer</h1>
-    <h2>Looking for some exciting new things to learn</h2>
-    <p class="paragraph-class">Some Fun Facts about me</p>
-    <ul>
-      <li>I have a Master's Degree in Geophysics</li>
-      <li>I learned programming for the first time in 2005</li>
-      <li>I have also worked in the oilfield</li>
-      <li>We have two cats named Milo and Bunny</li>
-      <li>This is my First Job in the United States</li>
-    </ul>
-
-    <marquee>
-      <button>Don' Click Me</button>
-    </marquee>
-
-    <table>
-      <thead>
-        <th>Hobbies</th>
-        <th>How many years</th>
-        <th>why its important</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Reading</td>
-          <td>15 years</td>
-          <td>to learn something</td>
-        </tr>
-        <tr>
-          <td>Playing video Games</td>
-          <td>20 years</td>
-          <td>to keep my mind active</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <img
-      src="./images/bunny.jpg"
-      alt="Milo and bunny out two cats, bunny feels cold all the time so my wife makes him wear clothes"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
 
-    <form>
-      <label for="hobbyName">Hobby Name: </label>
-      <input
-        class="text-box-class"
-        id="hobbyName"
-        placeholder="Input Hobby here"
-      />
-      <br />
-      <label for="hobbyLength">How Long have you done it? </label>
-      <input
-        class="text-box-class"
-        id="hobbyLength"
-        placeholder="Input how long you have been doing it here"
-      />
-      <br />
-      <label for="reasonForDoing">Reason: </label>
-      <input
-        class="text-box-class"
-        id="reasonForDoing"
-        placeholder="Why do you do this activity?"
-      />
+    />
+    <style></style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container-sm">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-7">Anosh Parvez, Novice Programmer</h1>
+          <h2 class="display-9">
+            Looking for some exciting new things to learn
+          </h2>
+          <p class="lead">Some Fun Facts about me</p>
+          <ul class="list-group list-group-numbered">
+            <li class="list-group-item">
+              I have a Master's Degree in Geophysics
+            </li>
+            <li class="list-group-item">
+              I learned programming for the first time in 2005
+            </li>
+            <li class="list-group-item">I have also worked in the oilfield</li>
+            <li class="list-group-item">
+              We have two cats named Milo and Bunny
+            </li>
+            <li class="list-group-item">
+              This is my First Job in the United States
+            </li>
+          </ul>
+          <hr />
+          <marquee>
+            <button>Don' Click Me</button>
+          </marquee>
+        </div>
+        <!-- <div class="col"></div> -->
+      </div>
+      <hr />
+      <div class="row">
+        <table class="table">
+          <thead>
+            <th scope="col">#</th>
+            <th scope="col">Hobbies</th>
+            <th scope="col">How many years</th>
+            <th scope="col">why its important</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Reading</td>
+              <td>15 years</td>
+              <td>to learn something</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Playing video Games</td>
+              <td>20 years</td>
+              <td>to keep my mind active</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+      <div class="row align-items-center">
+        <div class="col text-center">
+          <img
+            src="./images/bunny.jpg"
+            class="rounded mx-auto d-block w-25"
+            alt="Milo and bunny, our two cats"
+            title="Milo and Bunny relaxing together."
+          />
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <label class="fw-bold">Milo and Bunny relaxing together.</label>
+        </div>
+      </div>
+      <hr />
+      <div class="row mb-5 border border-black">
+        <form>
+          <h2 class="display-9">About your Hobby?</h2>
+          <div class="input-group flex-nowrap mb-3">
+            <span class="input-group-text" id="hobby">Hobby</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Hobby Name"
+              aria-label="Hobby Name"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
 
-      <p class="paragraph-class">Would you recommend this to others?</p>
-      <label>
-        <input type="radio" name="hobbyRecommendation" value="yes" />
-        yes </label
-      ><br />
-      <label>
-        <input type="radio" name="hobbyRecommendation" value="no" />
-        no
-      </label>
-      <br />
-      <label for="yourPass">Password</label>
-      <input
-        class="text-box-class"
-        id="yourPass"
-        type="password"
-        placeholder="Enter Password"
-      />
+          <div class="input-group flex-nowrap mb-3">
+            <span class="input-group-text" id="timeSpan">Span of Time</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Span of Time"
+              aria-label="Span of Time"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <div class="input-group flex-nowrap mb-3">
+            <span class="input-group-text" id="hobbyBenifits"
+              >Benifits of this Hobby</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Hobby Benifits"
+              aria-label="Hobby Benifits"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
 
-      <input type="submit" title="Make Recommendation" />
-    </form>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="hobbyBenifits"
+              >Would you Recommend this hobby to Others?</span
+            >
+            <div class="input-group-text">
+              <input
+                class="form-check-input mt-0"
+                type="radio"
+                value="Yes"
+                group="recommendation"
+                aria-label="Radio button for following text input"
+              />
+            </div>
+            <span class="input-group-text" id="hobbyBenifits">Yes</span>
+            <div class="input-group-text">
+              <input
+                class="form-check-input mt-0"
+                type="radio"
+                group="recommendation"
+                value="No"
+                aria-label="Radio button for following text input"
+              />
+            </div>
+            <span class="input-group-text" id="hobbyBenifits">No</span>
+          </div>
+          <div class="input-group flex-nowrap mb-3">
+            <span class="input-group-text" id="timeSpan">Password</span>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              aria-label="Password"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <hr />
+          <div class="input-group flex-nowrap mb-3">
+            <button type="submit" class="btn btn-primary">
+              Make Recommendation
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

@@ -35,3 +35,8 @@ tr, td  {
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#catImage {
+    width: 50%;
+    height: 50%;
+}
