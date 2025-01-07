@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Main Container -->
+    <div class="container mx-auto p-6">
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left Column (Grid Item) -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Left Column</h2>
+                <p class="text-gray-600">This is the content inside the left column. It is part of a grid layout using Tailwind CSS.</p>
+                
+                <!-- Flexbox Section Inside the Left Column -->
+                <div class="bg-white p-6 rounded-lg shadow-lg mt-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Flexbox Section</h2>
+                    <div class="flex flex-wrap gap-4">
+                        <!-- Flex Items -->
+                        <div class="flex-1 bg-blue-500 text-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold">Item 1</h3>
+                            <p>Flex Item 1</p>
+                        </div>
+                        <div class="flex-1 bg-green-500 text-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold">Item 2</h3>
+                            <p>Flex Item 2</p>
+                        </div>
+                        <div class="flex-1 bg-red-500 text-white p-4 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold">Item 3</h3>
+                            <p>Flex Item 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column (Grid Item) -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Right Column</h2>
+                <p class="text-gray-600">This is the content inside the right column. It is also part of the same grid layout, but will be responsive and stack on smaller screens.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="flex justify-center items-center">
+            <p class="text-center">&copy; 2025 My Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
