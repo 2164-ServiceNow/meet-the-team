@@ -5,20 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Introduction - Nicholas Rocco</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-image: linear-gradient(white, grey);
+    }
+
+    table {
+      background-color: rgb(120, 142, 98);
+    }
+
+    h4 {
+      text-decoration: underline;
+      position: relative;
+      top: 2px;
+      color: rgb(75, 60, 38);
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Profile</h1>
+  <h1 style="color: rgba(43, 84, 129, 0.758); text-decoration: underline; text-align: center;">Profile</h1>
   <p>Welcome to my page! Here is a little bit about me. I hope you enjoy.</p>
+
   <div id="intro">
-    <img src="https://nicholasroccodev.netlify.app/headshot.png" alt="a photo of me">
-    <h3><span>Name:</span> Nicholas Rocco</h3>
-    <h3><span>Location: </span>Boston, Massachusetts</h3>
+    <div id="img-container">
+      <img src="https://nicholasroccodev.netlify.app/headshot.png" alt="a photo of me">
+    </div>
+    <div class="mt-5" id="info-container">
+      <h3 class="mb-5"><span class="fst-italic">Name:</span> Nicholas Rocco</h3>
+      <h3><span class="fst-italic">Location: </span>Boston, Massachusetts</h3>
+    </div>
   </div>
 
   <div id="tidbits">
-    <div id="facts">
-      <h3>Fun Facts:</h3>
+    <div class="pt-4" id="facts">
+      <h3 style="font-style: italic; text-align: center;">Fun Facts:</h3>
       <ol>
         <li> I love synthesizers</li>
         <li> I taught English in South Korea</li>
@@ -26,8 +50,8 @@
       </ol>
     </div>
     <div id="listening">
-      <h3>Current Listening:</h3>
-      <table>
+      <h3 class="mt-5 text-center">Current Listening:</h3>
+      <table class="border-separate border-spacing-2">
         <thead>
           <th>Artist</th>
           <th>Album name</th>
@@ -36,25 +60,25 @@
         <tbody>
           <tr>
             <td>Love</td>
-            <td>Forever Changes</td>
+            <td class="title">Forever Changes</td>
             <td>1967</td>
           </tr>
           <tr>
-            <td>Mayo Thompson</td>
-            <td>Corky's Debt To His Father</td>
+            <td class="m-2">Mayo Thompson</td>
+            <td class="title">Corky's Debt To His Father</td>
             <td>1970</td>
           </tr>
           <tr>
             <td>White Noise</td>
-            <td> An Electric Storm</td>
+            <td class="title"> An Electric Storm</td>
             <td>1969</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
-  <div id="messages">
-    <h5>Message Board</h5>
+  <div class="mt-5" id="messages">
+    <h4>Message Board</h4>
     <ul>
       <li> Hello from the internet</li>
       <li>Kilroy was here</li>
@@ -65,7 +89,7 @@
       <button>post</button>
     </form>
   </div>
- 
+
   <marquee> Thanks For Visiting!</marquee>
 </body>
 
