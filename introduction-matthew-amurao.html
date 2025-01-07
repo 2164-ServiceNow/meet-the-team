@@ -4,14 +4,17 @@
         <title>Introduction - Matthew Amurao</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h2>Matthew Amurao from Colorado!</h2>
-        <h3>I wrote this html site wahooo</h3>
-        <h4>Just another website.</h4>
+        <header>
+            <h1>Matthew Amurao from Colorado!</h2>
+            <h3>I wrote this html site and I added css wahooo</h3>
+            <h4>Just another website.</h4>
+        </header>
         <marquee>long text long text long text long text long text long text long text long text long text long text long text long text long text long text <b>did you know that wahoo is a fish?</b> long text long text long text long text long text long text long text long text long text long text</marquee>
-        <p>Steps on how to make drip coffee:</p>
-        <ol>
+        <p class="bumpLeft">Steps on how to make drip coffee:</p>
+        <ol class="bumpLeft">
             <li>Measure and grind some coffee beans.</li>
             <li>Place the filter on the brewer.</li>
             <li>Add the coffee grounds on the filter.</li>
@@ -20,7 +23,7 @@
             <li>Agitate the brew with a gentle stir.</li>
             <li>Avoid using the last few drops.</li>
         </ol>
-        <p>Different types of coffee drinks:</p>
+        <p class="bumpLeft">Different types of coffee drinks:</p>
         <table>
             <thead>
                 <th>Coffee Type</th>
@@ -69,28 +72,28 @@
                 </tr>
             </tbody>
         </table>
-        <p>Create your own burger form:</p>
+        <p class="bumpLeft">Build your own burger form:</p>
         <form>
             <label for="orderName">Order for </label>
-            <input id="orderName" placeholder="Type name here."/><br/>
+            <input id="orderName" name="orderName" placeholder="Type name here."/><br/>
             <label for="orderDoublePatty">Double patty?</label>
-            <input id="orderDoublePatty" type="checkbox"/><br/>
+            <input id="orderDoublePatty" name="orderDoublePatty" type="checkbox"/><br/>
             <label for="cheese">Choose cheese</label><br/>
-            <input type="radio" id="americanCheese" name="cheese" value="american">
+            <input type="radio" id="americanCheese" name="orderCheese" value="american">
             <label for="americanCheese">American</label><br/>
-            <input type="radio" id="swissCheese" name="cheese" value="swiss">
+            <input type="radio" id="swissCheese" name="orderCheese" value="swiss">
             <label for="swissCheese">Swiss</label><br/>
-            <input type="radio" id="cheddarCheese" name="cheese" value="cheddar">
+            <input type="radio" id="cheddarCheese" name="orderCheese" value="cheddar">
             <label for="cheddarCheese">Cheddar</label><br/>
             <label for="orderKetchup">Add ketchup?</label>
-            <input id="orderKetchup" type="checkbox"/><br/>
+            <input id="orderKetchup" name="orderKetchup" type="checkbox"/><br/>
             <label for="orderMayo">Add mayonnaise?</label>
-            <input id="orderMayo" type="checkbox"/><br/>
+            <input id="orderMayo" name="orderMayo" type="checkbox"/><br/>
             <label for="orderMustard">Add mustard?</label>
-            <input id="orderMustard" type="checkbox"/><br/>
+            <input id="orderMustard" name="orderMustard" type="checkbox"/><br/>
             <label for="orderGrilledOnions">Add grilled onions  ?</label>
-            <input id="orderGrilledOnions" type="checkbox"/><br/>
-            <input type="submit" value="Submit Order"/>
+            <input id="orderGrilledOnions" name="orderGrilledOnions" type="checkbox"/><br/>
+            <input id="submitButton" type="submit" value="Submit Order"/>
         </form>
     </body>
 </html>
