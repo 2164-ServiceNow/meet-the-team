@@ -1,37 +1,35 @@
 /* Element Selector */
-body {
-    font-family: sans-serif;
-    margin: 20px; /* Box Model: Margin */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
 }
 
-/* Class Selector */
-.highlight {
-    background-color: yellow;
-    padding: 10px; /* Box Model: Padding */
-    border: 1px solid black; /* Box Model: Border */
+ul{
+    display:inline-block;
 }
 
-/* ID Selector */
-#message {
-    width: 100%;
-    box-sizing: border-box; /* Box Model: Include padding and border in element's total width and height */
+li{
+    text-align: left;
 }
 
-/* Table styling */
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-}
-
-/* List styling */
-ul {
-    list-style-type: square;
-}
-
-img{
-    display: block;
+table{
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    border: black;
+}
+
+/* ID's */
+#cubs{
+    background-color: blue;
+    color: red;
+}
+
+#blackhawks{
+    background-color: red;
+    color: white;
+}
+
+#england{
+    background-color: white;
+    color: red;
 }

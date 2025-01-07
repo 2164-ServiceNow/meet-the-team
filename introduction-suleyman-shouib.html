@@ -6,97 +6,125 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Introduction - Suleyman Shouib</title>
         <link rel="stylesheet" href="styles.css">
+        <!-- Boostrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <style>
-            #cubs{
-                background-color: blue;
-                color: red;
-            }
-
-            #blackhawks{
-                background-color: red;
-                color: white;
-            }
-
-            #england{
-                background-color: white;
-                color: red;
-            }
-
-            html{
+            .grid{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto;
                 background-color: black;
-                color: white;
-                text-align: center;
+                gap: 25px;
+                padding: 25px;
             }
-
-            table, th, td{
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-                border: 1px solid white;
-                border-collapse: collapse;
-                padding: 5px;
+            .grid > div{
+                background-color: red;
+                height:100px;
             }
-
-            ul{
-                display: inline-block;
-            }
-
-            li{
-                text-align: left;
+            
+            .item4{
+                grid-column: 1 / span 3;
+                font-size: 20px;
+                color: yellow;
             }
         </style>
+
     </head>
 
     <body>
-        <h1 style="margin-bottom: 1px;">Hello! My name is Suleyman Shouib!</h1>
-        <p style="margin-top: 1px;">You can also just call me Sully</p>
-        <h3>I am from Bartlett, Illinois</h3>
+        <!-- Boostrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <div >
+            <!-- Intro Stuff -->
+            <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle text-center">
+                <h1 style="margin-bottom: 1px;">Hello! My name is Suleyman Shouib!</h1>
+                <p style="margin-top: 1px;">You can also just call me Sully</p>
+                <h3>I am from Bartlett, Illinois</h3>
+            </div>
 
-        <h2>Here are some fun facts about me!</h2>
-        <ul>
-            <li>I did archery for 8 years (I shot olympic recurve)</li>
-            <li>I've participated in competitive videogame tournaments for Super Smash Brothers, winning a bit of cash throughout my "career"</li>
-            <li>I went to the University of Colorado Colorado Springs from 2019-2023 and graduated with a Computer Science degree</li>
-        </ul>
+            <!-- Unordered List Stuff -->
+            <div class="p-3 text-dark-emphasis bg-danger-subtle border border-primary-subtle text-center">
+                <h2>Here are some fun facts about me!</h2>
+                <ul>
+                    <li>I did archery for 8 years (I shot olympic recurve)</li>
+                    <li>I've participated in competitive videogame tournaments for Super Smash Brothers, winning a bit of cash throughout my "career"</li>
+                    <li>I went to the University of Colorado Colorado Springs from 2019-2023 and graduated with a Computer Science degree</li>
+                </ul>
+            </div>
 
-        <table>
-            <thead>
-                <th>What are my favorite Sports?</th>
-                <th>What is my favorite team for said sport?</th>
-            </thead>
+            <!-- Table Stuff -->
+            <div class="p-3 text-danger-emphasis bg-success-subtle border border-primary-subtle text-center">
+                <table>
+                    <thead>
+                        <th>What are my favorite Sports?</th>
+                        <th>What is my favorite team for said sport?</th>
+                    </thead>
 
-            <tbody>
-                <tr>
-                    <td>Baseball</td>
-                    <td id="cubs">The Cubs</td>
-                </tr>
+                    <tbody>
+                        <tr>
+                            <td>Baseball</td>
+                            <td id="cubs">The Cubs</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Hockey</td>
+                            <td id="blackhawks">The Blackhawks</td>
+                        </tr>
+
+                        <tr>
+                            <td>National Soccer</td>
+                            <td id="england">England</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="p-3 text-danger-emphasis bg-warning-subtle border border-primary-subtle text-center">
+                <!-- Image Stuff -->
+                <h2>Here is a list of my favorite videogames! Everything is ordered too.</h2>
+                <img src="https://cdn.discordapp.com/attachments/1219465701778133065/1300618359624171550/chart.png?ex=677e707d&is=677d1efd&hm=272e9ae090420d572b3fdf550d9550adf85073bda6295b7f6e98fb1fae13b9d0&" alt="Sully's Top 25 favorite videogames" width="1000px" height="700px"/>
                 
-                <tr>
-                    <td>Hockey</td>
-                    <td id="blackhawks">The Blackhawks</td>
-                </tr>
+                <!-- Form Stuff -->
+                <p>If you have any disagreements, submit a complaint below (jk there's no implementation for that, but you can pretend)</p>
+                
+                <form>
+                    <label for="complaintBox">Enter complaint here</label>
+                    <input id="complaintBox" placeholder="Best list ever!"/>
 
-                <tr>
-                    <td>National Soccer</td>
-                    <td id="england">England</td>
-                </tr>
-            </tbody>
-        </table>
+                    <marquee scrollamount="50">
+                        <input type="submit" value="Submit... If you can!"/>
+                    </marquee>
+                </form>
+            </div>
 
-        <h2>Here is a list of my favorite videogames! Everything is ordered too.</h2>
-        <img src="https://cdn.discordapp.com/attachments/1219465701778133065/1300618359624171550/chart.png?ex=677e707d&is=677d1efd&hm=272e9ae090420d572b3fdf550d9550adf85073bda6295b7f6e98fb1fae13b9d0&" alt="Sully's Top 25 favorite videogames" width="1000px" height="700px"/>
+            <!-- Grid Stuff -->
+            <div class="p-3 text-danger-emphasis bg-secondary-subtle border border-primary-subtle text-center">
+                <div class="container text-primary bg-dark border border-primary-subtle rounded-5">
+                <h1>Brick Wall (using grids)</h1>
+                </div>
 
-        <p>If you have any disagreements, submit a complaint below (jk there's no implementation for that, but you can pretend)</p>
+                <div class="grid">
+                    <div class="col"></div>
 
-        <form>
-            <label for="complaintBox">Enter complaint here</label>
-            <input id="complaintBox" placeholder="This is the best list of all time"/>
+                    <div class="col"></div>
 
-            <marquee scrollamount="50">
-                <input type="submit" value="Submit... If you can!"/>
-            </marquee>
-        </form>
+                    <div class="col"></div>
 
+                    <div class="item4">
+                        really long brick
+                    </div>
+
+                    <div class="col"></div>
+
+                    <div class="col"></div>
+
+                    <div class="col"></div>
+
+                </div>
+            </div>
+            
+
+        </div>
     </body>
 </html>
