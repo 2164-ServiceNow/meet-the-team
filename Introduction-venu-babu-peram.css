@@ -1,0 +1,13 @@
+/* This is a comment in CSS */
+
+table, th, td, tr {
+  font-family: fantasy;
+  background-color: mediumorchid;
+  font-size: xx-large;
+  border: solid;
+  border-width: 10px;
+  border-color: black;
+  margin: 100px;
+  margin-bottom: 10px;
+  padding: 0px 10px 15px 50px;
+}
