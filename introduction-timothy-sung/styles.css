@@ -24,6 +24,7 @@ ul {
 .clickable {
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
 }
 
 #position_input, #company_input, #start_date_input, #end_date_input {
@@ -43,4 +44,37 @@ ul {
 
 #end_date_input {
     background-color: rgb(245, 220, 238);
+}
+
+.flex-container, form, hr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+
+#form-container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+label {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    font-size: 14px;
 }
