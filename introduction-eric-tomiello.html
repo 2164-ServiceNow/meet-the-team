@@ -2,66 +2,83 @@
 <html>
     <head>
         <title>About Eric Tomiello</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <style>
+            li{
+                background-color: blueviolet;
+            }
+        </style>
     </head>
     <body>
-        <h2>My name is Eric Tomiello</h2>
-        <h5>I live in New Jersey </h5>
-        <p>Two things about me are:</p>
+        <h2 style="background-color: chocolate; text-align: center;">My name is Eric Tomiello</h2>
+        <h5 style="background-color: blue; color: gray;text-align: center;font-size: 20PX;"> <b>I live in New Jersey </b></h5>
+        <p style="color: red;background-color: black;"> Two things about me are:</p>
         <ol>
             <li>I enjoy snowboarding</li>
             <marquee>
-                <button>Press Me to Snowboard</button>
-            </marquee>
+                <button class="image-button" style="color:tan" >
+                  Press Me to snowboard
+                  <img src="giphy.gif" alt="Shown while pressing">
+                </button>
+              </marquee>              
             <li> Im a fan of the Miami Dolphins</li>
         </ol>
 
         <table>
             <thead>
-                <th>NFL Team</th>
-                <th>Primary Colors</th>
-                <th>Playoffs?</th>
+                <div class="container">
+                    <th>NFL Team</th>
+                    <th>Primary Colors</th>
+                    <th>Playoffs?</th>
+                    <th>Head Coach</th>
+                </div>
             </thead>
+            
             <hr/>
 
             <tbody>
                 <tr>
-                    <td>Miami Dolphins</td>
-                    <td>Aqua and Orange</td>
-                    <td>No...</td>
+                    <td id="Miami"><b>Miami Dolphins</b></td>
+                    <td id="MC">Aqua and Orange</td>
+                    <td id="oran">No...</td>
+                    <td id="MCD">Mike McDaniel</td>
 
                 </tr>
                 
                 <tr>
-                    <td>Philadelphia Eagles</td>
-                    <td>Green and black</td>
-                    <td>Yes</td>
+                    <td id="Philly"><b>Philadelphia Eagles</b></td>
+                    <td id="PC">Green and black</td>
+                    <td> Yes</td>
+                    <td id="Nic"> Nick Sirianni</td>
 
                 </tr>
             </tbody>
         </table>
 
-        <img src="images.jpeg" alt="A white duck standing in the grass" />
+        <hr/>
 
-        <form>
+
+        <form class="flex-center">
             <label for="favTeam">What is your favorite NFL team?</label>
             <input id="favTeam" placeholder="Type team here!"/>
+            <input type="submit"/>
+            <br>
             <label for="animal">Choose the animal you like the most!:</label>
-
-                <select name="animals" id="animals">
+            <select name="animals" id="animals">
                 <option value="Duck">Duck</option>
                 <option value="Dog">Dog</option>
                 <option value="Cat">Cat</option>
                 <option value="Pig">Pig</option>
-                </select>
-
-                <label for="animalWhy">Why do you like this one the best?</label>
-                <input id="animalWhy" placeholder="Type your reasoning"/> 
-                <input type="submit"/>
-
-                
-
-                <hr/>
+            </select>
+            <br>
+            <label for="animalWhy">Why do you like this one the best?</label>
+            <input id="animalWhy" placeholder="Type your reasoning"/> 
+            <input type="submit"/>
+            <br>
+            <label for="animal-like">How much do you like this animal?</label>
+            <input type="range" id="animal-like" name="animal-like" min="0" max="100" value="50">
         </form>
+        
 
     </body>
 </html>
