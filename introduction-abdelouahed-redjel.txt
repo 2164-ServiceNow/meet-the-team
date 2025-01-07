@@ -1,3 +1,0 @@
-Name: Abdelouahed Redjel
-From: Chicago, Illinois
-Fun Fact: I can fix NullPointerExceptions before my coffee gets cold
