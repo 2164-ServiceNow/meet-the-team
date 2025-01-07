@@ -1,12 +1,10 @@
 img {
-    height: 200px;
+    width: 250px;
 }
-td {
-    padding-left: 10px;
-}
-th, td {
-    padding-top: 10px;
-}
-h3, h4 {
-    background-color: rgb(229, 185, 236);
+#gameImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
