@@ -1,0 +1,46 @@
+tr, th, td {
+	font-family: cursive;
+	background-color:rgb(255, 205, 186);
+	font-size: 20px;
+    border: solid;
+    border-width: 3px;
+	border-color: black;
+    padding: 8px;
+}
+
+img {
+    margin: 10px;
+    max-height: 400px;
+}
+
+p, label, li {
+    font-size: 20px;
+}
+
+ul {
+    background-color: beige;
+}
+
+.clickable {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#position_input, #company_input, #start_date_input, #end_date_input {
+    width:250px;
+}
+#position_input {
+    background-color: rgb(245, 225, 220);
+}
+
+#company_input {
+    background-color: rgb(225, 220, 245);
+}
+
+#start_date_input {
+    background-color: rgb(220, 245, 224);
+}
+
+#end_date_input {
+    background-color: rgb(245, 220, 238);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction - Timothy Sung</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <style>
+            #center_box {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            body {
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="color:aliceblue; background-color: blue; margin-bottom: 10px; padding: 1px;">
+            <h1 style="margin: 0; margin-top: 3px; text-align: center;">Timothy Sung</h1>
+            <h4 style="margin: 0; margin-bottom: 3px; text-align: center;">born in New Jersey, living in Michigan</h4>
+        </div>
+        <div id="center_box">
+            <img src="sung-images/IMG_2501 (1).jpg" alt="A picture of Timothy Sung"/>
+            <div>
+                <p> A fun fact about myself is:</p>
+                <!--Fun fact list-->
+                <ul>
+                    <li>I am currently working on a digital web comic right now</li>
+                    <li>One of my favorite foods to cook and eat is chicken marsala</li>
+                    <li>I graduated from Michigan State University</li>
+                </ul>
+                <!--Resume table-->
+                <table>
+                    <thead>
+                        <th>Position</th>
+                        <th>Company</th>
+                        <th>Date Started</th>
+                        <th>Date Ended</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><marquee>Attendant</marquee></td>
+                            <td><marquee>Red Oaks Waterpark</marquee></td>
+                            <td><marquee>Jun 2018</marquee></td>
+                            <td><marquee>Aug 2020</marquee></td>
+                        </tr>
+                        <tr>
+                            <td><marquee>Java Intern</marquee></td>
+                            <td><marquee>Revature</marquee></td>
+                            <td><marquee>Jun 2024</marquee></td>
+                            <td><marquee>Aug 2024</marquee></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <marquee>
+            <button class="clickable">
+                See my art portfolio!
+            </button>
+        </marquee>
+        <hr/>
+        <!--Input form for adding new entries to resume-->
+        <form>
+            <label for="position_input">Position: </label>
+            <input id="position_input" placeholder="Enter new position"/>
+            <br/>
+            <label for="company_input">Company: </label>
+            <input id="company_input" placeholder="Enter the company for your new position"/>
+            <br/>
+            <label for="start_date_input">Date Started: </label>
+            <input id="start_date_input" placeholder="Enter the date you started a new position"/>
+            <br/>
+            <label for="end_date_input">Date Ended: </label>
+            <input id="end_date_input" placeholder="Enter the date you ended the position"/>
+            <br/>
+            <label for="resume_check">Add new entry to the resume?</label>
+            <input id="resume_check" type="checkbox"/>
+            <br/>
+            <label for="resume_pass">Password: </label>
+            <input id="resume_pass" type="password" placeholder="Enter password"/>
+            <input type="submit" class="clickable"/>
+            <br/>
+        </form>
+    </body>
+</html>
