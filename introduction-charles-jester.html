@@ -66,6 +66,34 @@
          <img src="./images/Image (1).jfif" alt="dog with stick in mouth running with ears flopped in the air"/>
          <img src="./images/Image (2).jfif" alt="majestic dog laying in the grass"/>
          <img src="./images/Image.jfif" alt="4 dogs hanging out and having some fun"/>
+
+         <!-- form element is just a container for any input element, to collect information and submit -->
+         <form>
+            <!-- label is just text to be associated with an input or really anything -->
+            <!-- for attribute binds the label to the named input, this must match the id attribute -->
+            <label for="hobbyName">Hobby Name</label>
+            <!-- placeholder atribute to fill in the empty space for our input field until an entry or text is added -->
+             <!-- id element is a UNIQUE identifier for a single element in an HTML doc -->
+            <input id="hobbyName" placeholder="Type out Hobby Name Here"/>
+            <br/>
+
+            <label for="hobbyLength">Length in Years</label>
+            <input id="hobbyLength" placeholder="Length you've done hobby"/>
+            <br/>
+
+            <label for="hobbyWhy">Why I do it?!</label>
+            <input id="hobbyWhy" placeholder="Why do you do this hobby?"/>
+            <hr/>
+
+            <label for="hobbyConfirm">Confirm you'd like to Add this Record?</label>
+            <input id="hobbyConfirm" type="checkbox"/>
+            <br/>
+
+            <label for="hobbyPass">Password</label>
+            <input id="hobbyPass" type="password" placeholder="Password to update info"/>
+
+            <input type="submit"/>
+         </form>
          
     </body>
 </html>
