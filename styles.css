@@ -1,0 +1,37 @@
+/* Element Selector */
+body {
+    font-family: sans-serif;
+    margin: 18px; /* Box Model: Margin */
+}
+
+/* Class Selector */
+.highlight {
+    background-color: rgb(156, 227, 255);
+    padding: 8px; /* Box Model: Padding */
+    border: 1px solid rgb(142, 82, 82); /* Box Model: Border */
+}
+
+/* ID Selector */
+#message {
+    width: 100%;
+    box-sizing: border-box; /* Box Model: Include padding and border in element's total width and height */
+}
+
+/* Table styling */
+table, th, td {
+    border: 8px solid rgb(131, 234, 255);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+/* List styling */
+ul {
+    list-style-type: square;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
