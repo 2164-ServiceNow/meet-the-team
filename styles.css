@@ -1,0 +1,12 @@
+img {
+    height: 200px;
+}
+td {
+    padding-left: 10px;
+}
+th, td {
+    padding-top: 10px;
+}
+h3, h4 {
+    background-color: rgb(229, 185, 236);
+}

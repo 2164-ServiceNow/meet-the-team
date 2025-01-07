@@ -4,6 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Introduction - Nicole Listerfelt</title>
+
+        <link rel="stylesheet" href="./styles.css"/>
+        <style>
+            h1, h3, h4 {
+                text-align: center;
+            }
+            .first-column {
+                background-color: rgb(145, 223, 197);
+            }
+            #gameTable {
+                background-color: rgb(185, 185, 220);
+                border: solid 5px;
+                border-color: rgb(81, 81, 81);
+                margin-bottom: 20px;
+            }
+        </style>
     </head>
     <body>
         <h1>Nicole Listerfelt</h1>
@@ -15,25 +31,25 @@
             <li>I like to do square-foot gardening</li>
         </ol>
 
-        <table>
+        <table id="gameTable">
             <thead>
-                <th>Favorite Board Game</th>
+                <th class="first-column">Favorite Board Game</th>
                 <th>Number of Players</th>
                 <th>Playtime</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>New York Zoo</td>
+                    <td class="first-column">New York Zoo</td>
                     <td>1-5</td>
                     <td>30-60 mins</td>
                 </tr>
                 <tr>
-                    <td>Mystic Vale</td>
+                    <td class="first-column">Mystic Vale</td>
                     <td>2-4</td>
                     <td>45 mins</td>
                 </tr>
                 <tr>
-                    <td>Caverna</td>
+                    <td class="first-column">Caverna</td>
                     <td>1-7</td>
                     <td>30-210 mins</td>
                 </tr>
