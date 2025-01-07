@@ -1,0 +1,20 @@
+h1 {
+    color:red
+}
+li{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.special{
+    color:crimson;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+table {
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
