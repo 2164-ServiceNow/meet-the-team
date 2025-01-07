@@ -1,0 +1,10 @@
+img {
+    width: 250px;
+}
+#gameImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
