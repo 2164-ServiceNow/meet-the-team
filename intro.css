@@ -1,0 +1,43 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px;
+    background-color: aqua;
+}
+
+.intro{
+    font-size: 20px;
+}
+
+images {
+    display: block;
+    margin: auto;
+}
+
+#image2 {
+    margin-left: 100px;
+}
+
+video {
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+table, th, td {
+    border: 2px solid magenta;
+    padding: 5px;
+}
+
+#Tharun{
+    border: 5px solid black;
+}
+
+marquee {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:deeppink;
+}
