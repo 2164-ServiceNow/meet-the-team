@@ -24,6 +24,8 @@ table {
 th, td {
     border-style: dotted;
     padding: 3px 10px;
+    border-color: black;
+    border-width: 2px;
 }
 img {
     display: block;
@@ -48,6 +50,6 @@ label {
 .someClass {
     text-decoration:underline;
 }
-.col, .col-3, .col-9 {
+#c, .col, .col-3, .col-9 {
     border: solid;
 }
