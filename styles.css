@@ -23,3 +23,45 @@ table {
     text-align: center;
     color: darkslateblue;
   }
+ 
+body,html {
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+    border: 3px solid limegreen;
+    
+    
+}
+.name{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+
+}
+.location{
+    grid-column-start: 4;
+    grid-column-end: five;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.facts{
+    grid-column-start: 4;
+    grid-column-end: five;
+    grid-row-start:3;
+    grid-row-end: 4;
+
+}
+.tableChart{
+    grid-column-start: 4;
+    grid-column-end: five;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+}
