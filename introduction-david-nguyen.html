@@ -17,9 +17,9 @@
                 background-color:blueviolet;
             }
 
-            h1, h3{
+            /* h1, h3{
                 background-color: aqua;
-            }
+            } */
 
             .flex-container {
             display: flex;
@@ -28,6 +28,15 @@
             flex-direction: column;
             }
 
+            .hobby-form-input {
+                background-color: aqua;
+            }
+
+            .hobby-label-font {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: large;
+                color: aliceblue
+            }
 
         </style>
     </head>
@@ -46,52 +55,54 @@
             <li class="flex-item">I am an avid gym goer of 7 years.</li>
             <li class="flex-item">I have a Bachelor's Degree in Computer Science and Engineering.</li>
             <li class="flex-item">I like games like maplestory and elden ring and valorant.</li>
-            <li class="flex-item">I love Vietname food such as Pho and Bun Bo Hue.</li>
+            <li class="flex-item">I love Vietnamese foods such as Pho and Bun Bo Hue.</li>
         </ul>
           
         <table class="table table-striped table-success">
             <thead class = "table-dark">
-                <th>Hobbies</th>
-                <th>Fun level</th>
-                <th>Why I do it</th>
+                <th>Gym Exercises</th>
+                <th>Rating</th>
+                <th>What does it workout?</th>
             </thead>
-            <tbody>
+            <tbody id="exerciseTableBody">
                 <tr>
-                    <td>Gym</td>
-                    <td>9/10</td>
-                    <td>Gains are nice and feels like therapy sometimes.</td>
+                    <td>Bench Press</td>
+                    <td>8/10</td>
+                    <td>Chest, Front Delts, Triceps</td>
                 </tr>
                 <tr>
-                    <td>Games</td>
-                    <td>10/10</td>
-                    <td>I like gaming because it is relaxing.</td>
+                    <td>Deadlift</td>
+                    <td>9/10</td>
+                    <td>Back, Core, Hamstrings</td>
                 </tr>
             </tbody>
         </table>
 
-        <form >
-            <label for "hobbyName">Hobbies</label>
-            <input id="hobbyName" placeholder="Input Hobby"/>
+        <form id="exerciseForm">
+            <label class="exercise-label-font" for="exerciseName">Gym Exercises</label>
+            <input class="exercise-form-input" id="exerciseName" placeholder="Input Exercise"/>
             <br/>
             
-            <label for "hobbyRate">Hobby Rating</label>
-            <input id="hobbyRate" placeholder="Rate Hobby"/>
+            <label class="exercise-label-font" for="exerciseRating">Exercise Rating</label>
+            <input class="exercise-form-input" id="exerciseRating" placeholder="Rate Exercise"/>
             <br/>
 
-            <label for "hobbyReason">Hobby Reason</label>
-            <input id="hobbyReason" placeholder="Reason for hobby"/>
+            <label class="exercise-label-font" for="exerciseTarget">What does it workout?</label>
+            <input class="exercise-form-input" id="exerciseTarget" placeholder="Muscles Targeted"/>
             <br/>
             
-            <label for "hobbyConfirm">Confirm to add this record </label>
-            <input id="hobbyName" type="checkbox"/>
+            <label class="exercise-label-font" for="exerciseConfirm">Confirm to add this exercise </label>
+            <input class="exercise-form-input" id="exerciseConfirm"" type="checkbox"/>
             <br/>
 
-            <label for="hobbyPw">Password</label>
-            <input id="hobbyPw" type="password" placeholder="Password to update info"/>
+            <label class="exercise-label-font" for="exercisePassword">Password</label>
+            <input class="exercise-form-input" id="exercisePassword" type="password" placeholder="Password to update info"/>
 
-            <input type="submit"/>
+            <input class="exercise-form-input" type="submit"/>
 
         </form>
+
+        <script src ="script.js"></script>
 
     </body>
 </html>
