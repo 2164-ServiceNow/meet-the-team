@@ -32,7 +32,7 @@
 
   <div id="intro">
     <div id="img-container">
-      <img src="https://nicholasroccodev.netlify.app/headshot.png" alt="a photo of me">
+      <img id="nick" src="https://nicholasroccodev.netlify.app/headshot.png" alt="a photo of me">
     </div>
     <div class="mt-5" id="info-container">
       <h3 class="mb-5"><span class="fst-italic">Name:</span> Nicholas Rocco</h3>
@@ -58,39 +58,39 @@
           <th>Year</th>
         </thead>
         <tbody>
-          <tr>
-            <td>Love</td>
-            <td class="title">Forever Changes</td>
-            <td>1967</td>
-          </tr>
-          <tr>
-            <td class="m-2">Mayo Thompson</td>
-            <td class="title">Corky's Debt To His Father</td>
-            <td>1970</td>
-          </tr>
-          <tr>
-            <td>White Noise</td>
-            <td class="title"> An Electric Storm</td>
-            <td>1969</td>
-          </tr>
         </tbody>
       </table>
+     
+    </div>
+    <div id="add-form">
+      <h4>Add an Album:</h4>
+      <form action="">
+        <label for="artist">Artist Name:</label><br />
+        <input name="artist" id="artist" type="text"><br />
+        <label for="album">Album Name:</label><br />
+        <input name="album" id="album" type="text"><br />
+        <label for="artist">Year:</label><br />
+        <input name="year" id="year" type="number"><br />
+        <button>submit</button>
+      </form>
     </div>
   </div>
   <div class="mt-5" id="messages">
     <h4>Message Board</h4>
-    <ul>
+    <ul id="msg-board">
       <li> Hello from the internet</li>
       <li>Kilroy was here</li>
     </ul>
-    <form action="">
+    <form id="message-form" action="">
       <label for="msg"> Add a message:</label><br />
       <input type="text" id="msg">
       <button>post</button>
     </form>
   </div>
+  <button onclick="changeButtonColor()">click me</button>
 
-  <marquee> Thanks For Visiting!</marquee>
+  <marquee id="marquee"> Thanks For Visiting!</marquee>
+  <script src="script.js"></script>
 </body>
 
 </html>
