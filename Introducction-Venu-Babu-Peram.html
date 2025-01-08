@@ -1,118 +1,98 @@
-<!-- Name: Venu Babu Peram
-From: Andhra Pradesh, India
-Fun Fact: I enjoy solving Rubik's Cubes in my free time.
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction - Venu Babu Peram</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venu HTML</title>
+  <link rel="style" href="Introduction-venu-babu-peram.css">
+  <style>
+    /* element selector  */
+    li {
+        font-family: fantasy;
+        background-color: rgb(112, 52, 52);
+    }
+
+    /* multi-element selector */
+    h3, p {
+        background-color: rgb(68, 133, 112);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    /* id selector - id is more specifc so it take priority over class selectors*/
+    #edu, #edu {
+        background-color: rgb(140, 27, 27);
+    }
+
+    /* Class selector */
+    .phone {
+        background-color: chartreuse;
+    }
+
+    .hobby-label-font {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: x-large;
+        color: aliceblue;
+    }
+
+    .hobby-label-background{
+        background-color: darkgoldenrod;
+        background-image: url('./images/Image\ \(1\).jfif');
+    }
+
+    td {
+        border: solid 3px;
+    }
+ </style>
 </head>
 <body>
-    </body>
-</html> -->
-<!-- This is a comment -->
-<!-- ctrl + / comments an entire line -->
-<!-- DOCTYPE helps maintain a safety if the .html is lost by ensuring this is always treated as an html document  -->
-<!DOCTYPE html>
+  <h1>I am Venu Babu Peram </h1>
+  <h2> From Andhra Pradesh, India</h2>
 
-<!-- html element is also more commonly referred to as the root tag, containing all information for our html document -->
-<html>
-    <!-- head element is the metadata -->
-    <head>
-        <title>Introduction - Venu Babu Peram</title>
-    </head>
-    <!-- body element contains all of our content -->
-    <body>
-        <!-- header elements are from 1-6, where the higher the number the smaller the size of text -->
-        <!-- alt + left-click adds additional cursors -->
-        <h1>Peram Venu Babu, !</h1>
-        <h3>Andhra Pradesh</h3>
-        <!-- paragraph element this is for blocks of text -->
-        <p>Some fun facts about me is:</p>
-        <!-- ordered list (ol) element is a list that counts each subsequent item or a numbered list -->
-        <!-- unordered list (ul) element creating a bulleted list -->
-        <ul>
-            <li>I enjoy solving Rubik's Cubes in my free time.</li>
-            <li>Has a Bachelor's Degree in Computer Science</li>
-            <li>Has a Bachelor's Degree in Computer Science</li>
-            <li>Has a Bachelor's Degree in Computer Science</li>
-            <!-- shift + alt + arrowkey (down or up) to copy a line of code in vscode-->
-            <li>I' love Playin cricket</li>
-            <li>I' love Playin cricket</li>
-            <li>I' love Playin cricket</li>
-      
-            <li>I have been training associates for over 3 years, and placed over 500 assocaites in all different forms of technology. Java with Spring boot, python, oracle sql to even automotive embedded systems</li>
-        </ul>
-        
-        <!-- marquee is an oldschool animation element for moving text acros a page -->
-        <marquee>
-            <!-- button with the text click -->
-            <button>Click Me!</button>
-        </marquee>
+  <p>Some fun facts about me is:</p>
+<ul>
+  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
+  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
+  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
+  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
+  <li>I am passionate about cricket</li>
+  <li>I am fan Kl Rahul</li>
+  <li>I am fan Kl Rahul</li>
+  <li>I am fan Kl Rahul</li>
+  <li>I am fan Kl Rahul</li>
+  <li>I am fan Kl Rahul</li>
+</ul>
 
-        <!-- table element is as you'd expect a table to be, similar to an excel doc -->
-        <table>
-            <!-- thead element is the headers for each of the columns -->
-            <thead>
-                <!-- table header (th) element fills the content of a single column -->
-                <th>Hobby Name</th>
-                <th>Length in Years</th>
-                <th>Why I do it?!</th>
-            </thead>
-            <tbody>
-                <!-- table row (tr) element helps us differentiate each record in our table by starting a new row -->
-                 <!-- table row acts a a block element, meaning it reserves an ENTIRE line of the web page for the content contained within -->
-                <tr>
-                    <!-- table data (td) element is for EACH record in EACH column, goes in order of the columns listed in thead -->
-                     <!-- table data is an INLINE element, meaning it wil continue to the end of the page before it starts a new line -->
-                    <td>Gaming</td>
-                    <td>25 years</td>
-                    <td>Advid gamer for my entire life, nice escape from reality</td>
-                </tr>
-                <tr>
-                    <td>Woodworking</td>
-                    <td>7 yrs</td>
-                    <td>I like to build things from scratch with my hands</td>
-                </tr>
-            </tbody>
-        </table>
+<marquee><button> Don't Click Me</button></marquee>
+<img src="./images/p1.jpg">
+<img src="./images/p2.jpg">
+<img src="./images/p3.jpg">
 
-        <!-- image element it is a self-closing tag, meaning you do not need another tag at the end-->
-         <!-- src is an attribute to provide the source/resource to an image -->
-         <img src="./images/Image (1).jfif" alt="dog with stick in mouth running with ears flopped in the air"/>
-         <img src="./images/Image (2).jfif" alt="majestic dog laying in the grass"/>
-         <img src="./images/Image.jfif" alt="4 dogs hanging out and having some fun"/>
 
-         <!-- form element is just a container for any input element, to collect information and submit -->
-         <form>
-            <!-- label is just text to be associated with an input or really anything -->
-            <!-- for attribute binds the label to the named input, this must match the id attribute -->
-            <label for="hobbyName">Hobby Name</label>
-            <!-- placeholder atribute to fill in the empty space for our input field until an entry or text is added -->
-             <!-- id element is a UNIQUE identifier for a single element in an HTML doc -->
-            <input id="hobbyName" placeholder="Type out Hobby Name Here"/>
-            <br/>
+<h1>Education</h1>
+<table >
+  <thead>
+    <th>College</th>
+    <th> Year of Passing</th>
+    <th>CGPA</th>
+  </thead>
+  <tr>
+    <td>SRKR Engineering</td>
+    <td>2023</td>
+    <td>7.46</td>
+  </tr>
+  <tr>
+    <td>AANM & VVRSR Polytechnic</td>
+    <td>2020</td>
+    <td>8.7</td>
+  </tr>
+</table>
+<form>
+  <label for="phone">Phone number</label>
+  <input class="phone" placeholder="Enter Phone Number:">
+  <br/>
+  <label for="address">Address</label>
+  <input placeholder="Enter Address"><br/>
 
-            <label for="hobbyLength">Length in Years</label>
-            <input id="hobbyLength" placeholder="Length you've done hobby"/>
-            <br/>
-
-            <label for="hobbyWhy">Why I do it?!</label>
-            <input id="hobbyWhy" placeholder="Why do you do this hobby?"/>
-            <hr/>
-
-            <label for="hobbyConfirm">Confirm you'd like to Add this Record?</label>
-            <input id="hobbyConfirm" type="checkbox"/>
-            <br/>
-
-            <label for="hobbyPass">Password</label>
-            <input id="hobbyPass" type="password" placeholder="Password to update info"/>
-
-            <input type="submit"/>
-         </form>
-         
-    </body>
+</form>
+</body>
 </html>
