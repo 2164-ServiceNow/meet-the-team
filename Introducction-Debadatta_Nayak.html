@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hey, I'm Deb - A Tech Enthusiast</title>
+    <style>
+      li {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: violet;
+      }
+      .hobby-form-input {
+        background-color: chartreuse;
+      }
+      .hobby-label-background {
+        background-color: darkgoldenrod;
+      }
+    </style>
+    <link rel="stylesheet" href="C:/Users/DebadattaNayak/OneDrive - revature.com/Desktop/servicenow/html&css/style.css">
 </head>
 <body>
     <h1>Debadatta Nayak</h1>
@@ -18,8 +31,10 @@
         <li>Data and AI excite me a lot.</li>
     </ul>
 
-    <!-- Removed marquee tag as it is obsolete -->
-    <p><button onclick="alert('Button clicked!')">Click me</button></p>
+    
+      <marquee>
+        <button onclick="alert('Button clicked!')">Click me</button>
+      </marquee>
 
     <table border="1">
         <thead>
@@ -43,7 +58,6 @@
         </tbody>
     </table>
 
-    
     <img src="C:/Users/DebadattaNayak/OneDrive - revature.com/Desktop/servicenow/700cooking.png" alt="Cooking Image" width="300">
     <img src="C:/Users/DebadattaNayak/OneDrive - revature.com/Desktop/servicenow/1221284.jpg" alt="Travel Image" width="300">
 
@@ -51,23 +65,19 @@
       <label for="hobbyname" class="hobby-label-background">Hobby Name</label>
       <input id="hobbyname" class="hobby-form-input" placeholder="Type your Hobby name Here" />
       <br />
-
       <label for="hobbyLength" class="hobby-label-background">Length in Years</label>
       <input id="hobbyLength" class="hobby-form-input" placeholder="Length you've done the hobby" />
       <br />
-
       <label for="hobbyWhy" class="hobby-label-background">Why I do it</label>
       <input id="hobbyWhy" class="hobby-form-input" placeholder="Why do I do this hobby" />
       <br />
-
       <label for="HobbyConfirm" class="hobby-label-background">Confirm you'd like to add this record</label>
       <input id="HobbyConfirm" type="checkbox" />
       <br />
-
       <label for="HobbyPass" class="hobby-label-background">Password</label>
       <input id="HobbyPass" type="password" placeholder="Password to update info" />
       <br />
-
       <input type="submit" />
+    </form>
 </body>
 </html>
