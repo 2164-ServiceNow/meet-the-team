@@ -3,7 +3,7 @@
 console.log("Meowdy Partner")
 console.log(10+5)
 
-console.error("Oh no a problem has occured")
+// console.error("Oh no a problem has occured")
 
 // Math with a variable
 x = 10 // Assigning value of 10 to x
@@ -90,9 +90,7 @@ console.log(cat)
 var cat;
 
 if(true){
-    var bird;
-    bird="parrot"
-    console.log(bird)
+    var bird = "parrot"
 }
 
 console.log(bird)
@@ -105,13 +103,14 @@ console.log(bird3)
 bird3 = "kiwi"
 console.log(bird3)
 
-console.log(add(2,2))
-
 // functions can be hoisted, ECMAScript6 added a new way to define functions with let
 function add(x,y){
-    let multi = 2 // Purely restricted var to functional scopes
+    var multi = 2 // Purely restricted var to functional scopes
     return x+y
 }
+
+console.log(add(2,2))
+// console.log(multi) 
 
 // console.log(add2(1,2,3))
 
@@ -129,7 +128,81 @@ let add3 = (a,b,c) => {
 
 console.log(add3(1,2,3))
 
-// console.log(multi)
+// conditionals & truthy-falsey
 
-//
+if(""){ // empty string is interpreted as a "false" value
+    console.log("HI mom!")
+}
 
+let variable1 = undefined;
+if(variable1){
+    console.log("HI mom!")
+}
+
+if(0){
+    console.log("HI mom!")
+}
+
+if(null){
+    console.log("HI mom!")
+}
+
+if(!false){ // negate or look for the opposite condition using '!'
+    console.log("HI mom!")
+}
+
+if([]){ // truthy, this is because it's a data structure that also contains functions
+    console.log("HI mom!")
+}
+
+console.log(array.pop())
+
+if({}){
+    console.log("HI mom!")
+}
+
+let num = 11
+num = "10f"
+// javascript would view the 10f as a string so when it tries to type coerce with the modulo it fails and considers it Not A Number (NaN)
+// NaN oddly enough is of datatype number
+
+if (num % 3 === 0){
+    console.log("Divis by 3")
+} else if (num % 5 === 0){
+    console.log("Divis by 5")
+} else {
+    console.log("number not divis by 5 or 3")
+}
+
+// feel free to look up ternary operators
+
+// For loops
+// basic for loop formulat
+
+let arrayLoop = [fname, isTrainer, hasABigBRain, mind, x2, [[1,2],[3,4]]]
+
+// define starting value; conditional to terminate the loop;define number of steps for each iteration
+for(let i = 1, j = 2, x =5; x < arrayLoop.length; i++){
+    console.log(arrayLoop[i])
+    if(!arrayLoop[i]){
+        x = x + 7
+    }
+}
+
+// Enhanced for loopsn for ARrays this uses the keyword 'of'
+for(const element of arrayLoop){
+    console.log(element)
+}
+
+// Enhanced for loops for Objects uses the 'in' keyword
+
+dog2 = {
+    dname: "Freya",
+    breed: "bernese mountain dog",
+    age: 1.1
+}
+
+// key indicates the key name, not the value. To access value, you must use bracket notation otherwise it will look for the keyname "key" in dog2 object.
+for(const key in dog2){
+    console.log(dog2[key])
+}
