@@ -101,3 +101,17 @@ input
     background: sienna;
     accent-color: sienna;
 }
+
+button
+{
+    background: sienna;
+    padding: 1vmin;
+    border: none;
+    color: #f7da9a;
+    margin: 1vmin 0 0 1.5vmin;
+}
+
+button:hover
+{
+    box-shadow: 0 0 0.2vmin 0.1vmin sienna;
+}

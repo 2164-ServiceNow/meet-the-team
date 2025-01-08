@@ -13,6 +13,9 @@
             <h4>Just another website.</h4>
         </header>
         <marquee>long text long text long text long text long text long text long text long text long text long text long text long text long text long text <b>did you know that wahoo is a fish?</b> long text long text long text long text long text long text long text long text long text long text</marquee>
+        <span style="white-space: pre" class="bumpLeft">Local Browser Storage Color:  </span><span id="colorLabel"></span>
+        <button id="setBlue" class="bumpLeft" onclick="setBlue()">Set Storage Color Value to Blue</button>
+        <button id="setGreen" class="bumpLeft" onclick="setGreen()">Set Storage Color Value to Green</button>
         <p class="bumpLeft">Steps on how to make drip coffee:</p>
         <ol class="bumpLeft">
             <li>Measure and grind some coffee beans.</li>
@@ -30,7 +33,7 @@
                 <th>Diagram</th>
                 <th>Ingredients</th>
             </thead>
-            <tbody>
+            <tbody id="menuBody">
                 <tr>
                     <td>Americano</td>
                     <td><img src="./images/americano.png" /></td>
@@ -72,28 +75,35 @@
                 </tr>
             </tbody>
         </table>
+        <button id="randomizeMenu" class="bumpLeft" onclick="randomizeMenu()">Randomize Menu!</button>
+        <span style="margin-left:1vw;">Try to hover over the table cells!</span>
+        <p id="changableMessage">This message has NOT been changed by javascript.</p>
         <p class="bumpLeft">Build your own burger form:</p>
-        <form>
-            <label for="orderName">Order for </label>
-            <input id="orderName" name="orderName" placeholder="Type name here."/><br/>
-            <label for="orderDoublePatty">Double patty?</label>
-            <input id="orderDoublePatty" name="orderDoublePatty" type="checkbox"/><br/>
-            <label for="cheese">Choose cheese</label><br/>
-            <input type="radio" id="americanCheese" name="orderCheese" value="american">
-            <label for="americanCheese">American</label><br/>
-            <input type="radio" id="swissCheese" name="orderCheese" value="swiss">
-            <label for="swissCheese">Swiss</label><br/>
-            <input type="radio" id="cheddarCheese" name="orderCheese" value="cheddar">
-            <label for="cheddarCheese">Cheddar</label><br/>
-            <label for="orderKetchup">Add ketchup?</label>
-            <input id="orderKetchup" name="orderKetchup" type="checkbox"/><br/>
-            <label for="orderMayo">Add mayonnaise?</label>
-            <input id="orderMayo" name="orderMayo" type="checkbox"/><br/>
-            <label for="orderMustard">Add mustard?</label>
-            <input id="orderMustard" name="orderMustard" type="checkbox"/><br/>
-            <label for="orderGrilledOnions">Add grilled onions  ?</label>
-            <input id="orderGrilledOnions" name="orderGrilledOnions" type="checkbox"/><br/>
-            <input id="submitButton" type="submit" value="Submit Order"/>
-        </form>
+        <div id="burgerFormContainer" style="display: block;">
+            <form style="display: inline-block;" id="burgerForm">
+                <label for="orderName">Order for </label>
+                <input id="orderName" name="orderName" placeholder="Type name here."/><br/>
+                <label for="orderDoublePatty">Double patty?</label>
+                <input id="orderDoublePatty" name="orderDoublePatty" type="checkbox"/><br/>
+                <label for="cheese">Choose cheese</label><br/>
+                <input type="radio" id="americanCheese" name="orderCheese" value="american" required/>
+                <label for="americanCheese">American</label><br/>
+                <input type="radio" id="swissCheese" name="orderCheese" value="swiss" required/>
+                <label for="swissCheese">Swiss</label><br/>
+                <input type="radio" id="cheddarCheese" name="orderCheese" value="cheddar" required/>
+                <label for="cheddarCheese">Cheddar</label><br/>
+                <label for="orderKetchup">Add ketchup?</label>
+                <input id="orderKetchup" name="orderKetchup" type="checkbox"/><br/>
+                <label for="orderMayo">Add mayonnaise?</label>
+                <input id="orderMayo" name="orderMayo" type="checkbox"/><br/>
+                <label for="orderMustard">Add mustard?</label>
+                <input id="orderMustard" name="orderMustard" type="checkbox"/><br/>
+                <label for="orderGrilledOnions">Add grilled onions ?</label>
+                <input id="orderGrilledOnions" name="orderGrilledOnions" type="checkbox"/><br/>
+                <input id="submitButton" type="submit" value="Submit Order"/>
+            </form>
+            <span></span>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
