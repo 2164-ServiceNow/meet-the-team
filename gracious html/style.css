@@ -1,0 +1,24 @@
+body{ background-color: aqua;}
+body {
+    background-image: url(images/college.jpg);
+   
+  }
+
+h1{background-color: brown;}
+label{background-color: yellow;
+font-size:20px;}
+form{ width: 500px; 
+    height: 300px; 
+    margin:0 auto; 
+    padding: 20px; 
+    border: 5px solid white; 
+    box-sizing: border-box; }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;}
+        .footer p{ font-size: 70px;}
