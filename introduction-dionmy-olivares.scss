@@ -74,9 +74,17 @@ html {
     color: #1b1c1b;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // V-Card styles
 .vCard {
-    margin: 30vh auto;
+    margin: 0 auto;
     width: 850px;
     background-color: #f0edec;
     border-radius: 30px;
@@ -139,15 +147,20 @@ html {
                 right: 0;
             }
         }
+
+        &footer form > div {
+            display: flex;
+        }
     }
 }
 
 label {
-    margin-right: 16px;
+    display: inline-block;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
-input[type='text'] {
+input[type='email'] {
     padding: 8px 16px;
     background-color: rgba($color: #000000, $alpha: 0.15);
     border-top-left-radius: 8px;
@@ -156,8 +169,24 @@ input[type='text'] {
     border-bottom: 1px solid #1b1c1b;
 }
 
+.is-invalid,
+.is-success {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.is-invalid {
+    color: #d7392d;
+}
+
+.is-success {
+    color: #009e74;
+}
+
 .Button {
+    margin-left: 8px;
     padding: 8px 16px;
+    height: 40px;
     font-weight: bold;
     color: white;
     background-color: #9e094e;

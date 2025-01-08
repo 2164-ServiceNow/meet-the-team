@@ -11,9 +11,10 @@
             <section class="vCard-header">
                 <div>
                     <h1>Dionmy Olivares</h1>
-                    <h3>Fort Myers, Florida</h3>
+                    <h3 id="dynamic-message">Fort Myers, Florida</h3>
                 </div>
                 <img
+                    id="avatar"
                     src="https://avatars.githubusercontent.com/u/2271231?v=4"
                     alt="Profile picture"
                 />
@@ -21,7 +22,7 @@
             <section class="vCard-body">
                 <div>
                     <marquee behavior="" direction=""
-                        ><div>
+                        ><div class="MarqueeContent-text">
                             FUN FACTS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             &nbsp; &nbsp; &nbsp; &nbsp; FUN FACTS&nbsp; &nbsp;
                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -51,7 +52,7 @@
                         <li>I've built my own bike.</li>
                     </ul>
                     <marquee behavior="" direction="right"
-                        ><div>
+                        ><div class="MarqueeContent-text">
                             FUN FACTS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             &nbsp; &nbsp; &nbsp; &nbsp; FUN FACTS&nbsp; &nbsp;
                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -116,18 +117,30 @@
                 </table>
             </section>
             <section class="vCard-footer">
-                <form action="">
-                    <label for="subscribe"
+                <form id="subscribe">
+                    <label for="email"
                         >Subscribe to my newsletter to never miss an
                         update!</label
-                    ><input
-                        id="subscribe"
-                        type="text"
-                        placeholder="Your email"
-                    />
-                    <input type="submit" class="Button" value="Subscribe" />
+                    >
+                    <div>
+                        <div>
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="Your email"
+                            />
+                            <div id="email-error"></div>
+                        </div>
+                        <input
+                            id="submit"
+                            type="submit"
+                            class="Button"
+                            value="Subscribe"
+                        />
+                    </div>
                 </form>
             </section>
         </div>
+        <script src="./introduction-dionmy-olivares.js"></script>
     </body>
 </html>
