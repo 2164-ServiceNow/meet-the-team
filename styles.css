@@ -1,7 +1,10 @@
 /* Element Selector */
 body {
-    font-family: sans-serif;
-    margin: 18px; /* Box Model: Margin */
+    font-family: cursive;
+    margin: 20px; /* Box Model: Margin */
+    background: url("naruto.jpg");
+    object-fit: cover;
+
 }
 
 /* Class Selector */
@@ -22,11 +25,14 @@ table, th, td {
     border: 8px solid rgb(131, 234, 255);
     border-collapse: collapse;
     padding: 6px;
+    tr{
+        background-color: #c0ffff97;
+      }
 }
 
 /* List styling */
 ul {
-    list-style-type: square;
+    list-style-type: round;
 }
 
 img{
