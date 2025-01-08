@@ -1,0 +1,53 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    text-align: center;
+    border-style: dotted;
+    border-color: red;
+}
+h3 {
+    border: solid;
+    border-width: 20px;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-right:10px;
+    margin-left:10px;
+    padding-left:20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+table {
+    border-style: double;
+    padding:10px;
+}
+th, td {
+    border-style: dotted;
+    padding: 3px 10px;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+label {
+    margin-right: 10px;
+}
+#hobbyName {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+#hobbyAge {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: yellow;
+    padding-left: 10px;
+}
+#hobbyLike {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.someClass {
+    text-decoration:underline;
+}
+.col, .col-3, .col-9 {
+    border: solid;
+}
