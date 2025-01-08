@@ -65,7 +65,7 @@
         <!-- unordered list (ul) element creating a bulleted list -->
         <ul style="background-color: blueviolet;">
             <li style="background-color: yellow;">I have a black belt in Tae Kwon Do</li>
-            <li>Has a Bachelor's Degree in Biology</li>
+            <li id="bioFactDegree">Has a Bachelor's Degree in Biology</li>
             <!-- shift + alt + arrowkey (down or up) to copy a line of code in vscode-->
             <li>I've built every peice of furniture in my room</li>
             <li>I have a 90lb bernese mountain dog who will make an appearance in this</li>
@@ -75,7 +75,9 @@
         <!-- marquee is an oldschool animation element for moving text acros a page -->
         <marquee>
             <!-- button with the text click -->
-            <button>Click Me!</button>
+             <!-- when this button is clicked, I want the list item id bioFact-degree to change to "Yea, but when did he even use it last?!" -->
+              <!-- onclick attribute with "" or without works just fine, DO NOT FORGET TO INVOKE YOUR FUNCTION () -->
+            <button onclick="updateBioFactDegree()">Click Me!</button> 
         </marquee>
 
         <!-- table element is as you'd expect a table to be, similar to an excel doc -->
@@ -87,7 +89,7 @@
                 <th>Length in Years</th>
                 <th>Why I do it?!</th>
             </thead>
-            <tbody>
+            <tbody id="hobbyTableBody">
                 <!-- table row (tr) element helps us differentiate each record in our table by starting a new row -->
                  <!-- table row acts a a block element, meaning it reserves an ENTIRE line of the web page for the content contained within -->
                 <tr>
@@ -112,7 +114,7 @@
          <img src="./images/Image.jfif" alt="4 dogs hanging out and having some fun"/>
 
          <!-- form element is just a container for any input element, to collect information and submit -->
-         <form>
+         <form id="hobbyForm">
             <!-- label is just text to be associated with an input or really anything -->
             <!-- for attribute binds the label to the named input, this must match the id attribute -->
             <label class="hobby-label-font hobby-label-background" for="hobbyName">Hobby Name</label>
@@ -138,6 +140,7 @@
 
             <input class="hobby-form-input" type="submit"/>
          </form>
-         
+    
+         <script src="introduction-charles-jester.js"></script>
     </body>
 </html>
