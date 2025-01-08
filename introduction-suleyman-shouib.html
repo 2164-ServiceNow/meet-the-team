@@ -83,19 +83,33 @@
             <div class="p-3 text-danger-emphasis bg-warning-subtle border border-primary-subtle text-center">
                 <!-- Image Stuff -->
                 <h2>Here is a list of my favorite videogames! Everything is ordered too.</h2>
-                <img src="https://cdn.discordapp.com/attachments/1219465701778133065/1300618359624171550/chart.png?ex=677e707d&is=677d1efd&hm=272e9ae090420d572b3fdf550d9550adf85073bda6295b7f6e98fb1fae13b9d0&" alt="Sully's Top 25 favorite videogames" width="1000px" height="700px"/>
+                <img id="favoriteGames" src="https://cdn.discordapp.com/attachments/1219465701778133065/1300618359624171550/chart.png?ex=677e707d&is=677d1efd&hm=272e9ae090420d572b3fdf550d9550adf85073bda6295b7f6e98fb1fae13b9d0&" alt="Sully's Top 25 favorite videogames" width="100px" height="70px"/>
                 
                 <!-- Form Stuff -->
                 <p>If you have any disagreements, submit a complaint below (jk there's no implementation for that, but you can pretend)</p>
                 
-                <form>
+                <form id="complaintForm">
                     <label for="complaintBox">Enter complaint here</label>
-                    <input id="complaintBox" placeholder="Best list ever!"/>
+                    <input id="complaintBox" value="Best list ever!"/>
+
+                    <label for="emailBox">Enter Email</label>
+                    <input type = "email" id="emailBox" placeholder="Enter a real email" required/>
+                    <span id="email-error" style="color:red; display:none;">Please enter a valid email address.</span>
 
                     <marquee scrollamount="50">
                         <input type="submit" value="Submit... If you can!"/>
                     </marquee>
                 </form>
+
+                <p id="mostRecentComplaint">The Most Recent Complaint Was... </p>
+            </div>
+
+            <div class = "text-center">
+
+                <p id="timeUponLoading"></p>
+
+                <button onclick="timezoneClick()">Check Time</button>
+                <p id="currentTimeMessage">What time is it right now?</p>
             </div>
 
             <!-- Grid Stuff -->
@@ -106,19 +120,13 @@
 
                 <div class="grid">
                     <div class="col"></div>
-
                     <div class="col"></div>
-
                     <div class="col"></div>
-
                     <div class="item4">
                         really long brick
                     </div>
-
                     <div class="col"></div>
-
                     <div class="col"></div>
-
                     <div class="col"></div>
 
                 </div>
@@ -126,5 +134,7 @@
             
 
         </div>
+
+        <script src="introduction-suleyman-shouib.js"></script>
     </body>
 </html>
