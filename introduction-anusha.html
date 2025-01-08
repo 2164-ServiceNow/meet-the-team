@@ -1,0 +1,115 @@
+<!-- This is a comment -->
+<!-- ctrl + / comments an entire line -->
+<!-- DOCTYPE helps maintain a safety if the .html is lost by ensuring this is always treated as an html document  -->
+<!DOCTYPE html>
+
+<!-- html element is also more commonly referred to as the root tag, containing all information for our html document -->
+<html>
+    <!-- head element is the metadata -->
+    <head>
+        <title>Introduction-Anusha</title>
+        <link rel="stylesheet" href="introduction-anusha.css">
+        <style>
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <!-- body element contains all of our content -->
+    <body>
+        <!-- header elements are from 1-6, where the higher the number the smaller the size of text -->
+        <!-- alt + left-click adds additional cursors -->
+        <h1>Anusha's Profile</h1>
+        <h3>AndhraPradesh , India</h3>
+        <!-- paragraph element this is for blocks of text -->
+        <p>Some fun facts about me is:</p>
+        <!-- ordered list (ol) element is a list that counts each subsequent item or a numbered list -->
+        <!-- unordered list (ul) element creating a bulleted list -->
+        <ul>
+            <li>I completed my b.tech Gradution in CSE</li>
+            <!-- shift + alt + arrowkey (down or up) to copy a line of code in vscode-->
+            <li>My skills are Python,SQL,HTML,CSS,Javascript</li>
+            <li>I am currently training in ServiceNow to enhance my skills </li>
+            <li>I believe art is the best way to express creativity</li>
+        </ul>
+        
+        <!-- marquee is an oldschool animation element for moving text acros a page -->
+        <marquee>
+            <!-- button with the text click -->
+            <button>Info!</button>
+        </marquee>
+
+        <!-- table element is as you'd expect a table to be, similar to an excel doc -->
+        <table>
+            <!-- thead element is the headers for each of the columns -->
+            <thead>
+                <!-- table header (th) element fills the content of a single column -->
+                <th>Hobby Name</th>
+                <th>Length in Years</th>
+                <th>Why I do it?!</th>
+            </thead>
+            <tbody>
+                <!-- table row (tr) element helps us differentiate each record in our table by starting a new row -->
+                 <!-- table row acts a a block element, meaning it reserves an ENTIRE line of the web page for the content contained within -->
+                <tr>
+                    <!-- table data (td) element is for EACH record in EACH column, goes in order of the columns listed in thead -->
+                     <!-- table data is an INLINE element, meaning it wil continue to the end of the page before it starts a new line -->
+                    <td>Art</td>
+                    <td>10+ years</td>
+                    <td>Art makes some refresh</td>
+                </tr>
+                <tr>
+                    <td>Cooking</td>
+                    <td>7 yrs</td>
+                    <td>Cooking gives me Satisfaction</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- image element it is a self-closing tag, meaning you do not need another tag at the end-->
+         <!-- src is an attribute to provide the source/resource to an image -->
+         <img src="./Images/alappuzha-in-kerala.jpg" alt="Nature gives us peace of mind" style="width: 300px; height: auto;">
+
+
+         <!-- form element is just a container for any input element, to collect information and submit -->
+         <form>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Field Name</th>
+                    <th>Input</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="hobbyName">Hobby Name</label></td>
+                    <td><input id="hobbyName" placeholder="Type out Hobby Name Here"></td>
+                </tr>
+                <tr>
+                    <td><label for="hobbyLength">Length in Years</label></td>
+                    <td><input id="hobbyLength" placeholder="Length you've done hobby"></td>
+                </tr>
+                <tr>
+                    <td><label for="hobbyWhy">Why I do it?!</label></td>
+                    <td><input id="hobbyWhy" placeholder="Why do you do this hobby?"></td>
+                </tr>
+                <tr>
+                    <td><label for="hobbyConfirm">Confirm you'd like to Add this Record?</label></td>
+                    <td><input id="hobbyConfirm" type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td><label for="hobbyPass">Password</label></td>
+                    <td><input id="hobbyPass" type="password" placeholder="Password to update info"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            
+         </form>
+         
+    </body>
+</html>
