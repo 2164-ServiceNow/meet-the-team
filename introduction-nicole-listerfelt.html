@@ -14,22 +14,23 @@
                 <h1>Nicole Listerfelt</h1>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
                 <h3>from Wayne, NE</h3>
-            
+                <p id="dynamic-message"></p>
                 <p style="font-style: italic;">Some facts about me:</p>
-                <ol class="list-group list-group-numbered">
+                <ol class="list-group list-group-numbered" id="listGroup">
                     <li class="list-group-item">I have a Master's in Mathematics</li>
                     <li class="list-group-item">My two cats are named Murphy and Sasha</li>
                     <li class="list-group-item">I like to do square-foot gardening</li>
                 </ol>
+                <button id="topButton" onclick="buttonClicked()">Click me</button>
             </div>
             <div class="row">
-                <table class="table table-striped">
+                <table class="table table-striped" >
                     <thead>
                         <th>Favorite Board Game</th>
                         <th>Number of Players</th>
                         <th>Playtime</th>
                     </thead>
-                    <tbody>
+                    <tbody id="gameTableBody">
                         <tr>
                             <td>New York Zoo</td>
                             <td>1-5</td>
@@ -62,11 +63,11 @@
             </div>
 
             <div class="row">
-                <form>
+                <form id="gameForm">
                     <h4>New Game Form</h4>
                     <div class="mb-3">
                         <label for="gameName" class="form-label">Game</label>
-                        <input id="gameName" placeholder="Enter a new game name"/>
+                        <input id="gameName" placeholder="Enter a new game name" required/>
                     </div>
                     
                     <div class="mb-3">
@@ -81,12 +82,12 @@
         
                     <div class="mb-3">
                         <label for="gameImage" class="form-label">Image url</label>
-                        <input id="gameImage" placeholder="Enter a url"/>
+                        <input id="gameImage" placeholder="Enter a url" required/>
                     </div>
         
                     <div class="mb-3">
                         <label for="gameAlt" class="form-label">Image description</label>
-                        <input id="gameAlt" placeholder="Description for screen readers"/>
+                        <input id="gameAlt" placeholder="Description for screen readers" required/>
                     </div>
         
                     <div>
@@ -95,5 +96,6 @@
                 </form>
             </div>
         </div>
+        <script src="./script.js"></script>
     </body>
 </html>
