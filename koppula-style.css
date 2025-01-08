@@ -1,14 +1,15 @@
 /* Element Selector */
 body {
     font-family: sans-serif;
-    margin: 20px; /* Box Model: Margin */
+    margin: 50px; /* Box Model: Margin */
+    background: url("C:/Users/Anand/Desktop/back.avif");
 }
 
 /* Class Selector */
 .highlight {
-    background-color: yellow;
-    padding: 10px; /* Box Model: Padding */
-    border: 1px solid black; /* Box Model: Border */
+    background-color: rgb(155, 129, 94);
+    padding: 50px; /* Box Model: Padding */
+    border: 5px solid rgb(200, 56, 56); /* Box Model: Border */
 }
 
 /* ID Selector */
@@ -19,14 +20,15 @@ body {
 
 /* Table styling */
 table, th, td {
-    border: 1px solid black;
+    border: 8px solid rgb(177, 79, 79);
     border-collapse: collapse;
-    padding: 5px;
+    padding: 20px;
 }
 
 /* List styling */
 ul {
     list-style-type: square;
+    color:rgb(0, 0, 0) ;
 }
 
 img{
