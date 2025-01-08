@@ -26,6 +26,7 @@
                 <h1 style="margin: 0; margin-top: 3px; text-align: center;">Timothy Sung</h1>
                 <h4 style="margin: 0; margin-bottom: 3px; text-align: center;">born in New Jersey, living in Michigan</h4>
             </div>
+            <p id="dynamic-message"></p>
             <div id="center_box">
                 <img id="timothy-sung-image" src="sung-images/IMG_2501 (1).jpg" alt="A picture of Timothy Sung"/>
                 <div>
@@ -44,7 +45,7 @@
                             <th>Date Started</th>
                             <th>Date Ended</th>
                         </thead>
-                        <tbody>
+                        <tbody id="resume_table_body">
                             <tr>
                                 <td><marquee>Attendant</marquee></td>
                                 <td><marquee>Red Oaks Waterpark</marquee></td>
@@ -67,24 +68,27 @@
                 </button>
             </marquee>
             <!--Input form for adding new entries to resume-->
-            <form>
+            <form id="resume_form">
                 <hr/>
                 <div id="form-container">
+                    <div class="form-row" style="justify-content: center;">
+                        <span id="form-error" style="color:red; display:none;">Checkbox is not checked or incorrect password.</span>
+                    </div>
                     <div class="form-row">
                         <label for="position_input">Position: </label>
-                        <input id="position_input" placeholder="Enter new position"/>
+                        <input id="position_input" placeholder="Enter new position" required/>
                     </div>
                     <div class="form-row">
                         <label for="company_input">Company: </label>
-                        <input id="company_input" placeholder="Enter the company for your new position"/>
+                        <input id="company_input" placeholder="Enter the company for your new position" required/>
                     </div>
                     <div class="form-row">
                         <label for="start_date_input">Date Started: </label>
-                        <input id="start_date_input" placeholder="Enter the date you started a new position"/>
+                        <input id="start_date_input" placeholder="Enter the date you started a new position" required/>
                     </div>
                     <div class="form-row">
                         <label for="end_date_input">Date Ended: </label>
-                        <input id="end_date_input" placeholder="Enter the date you ended the position"/>
+                        <input id="end_date_input" placeholder="Enter the date you ended the position" required/>
                     </div>
                     <div class="form-row">
                         <label for="resume_check">Add new entry to the resume?</label>
@@ -97,6 +101,8 @@
                     </div>
                 </div>
             </form>
+            <br/>
+            <button class="clickable btn" onclick="resetTable()">Reset Table</button>
             <br/>
 
             <!--Bootstrap Accordian-->
