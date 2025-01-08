@@ -1,0 +1,43 @@
+/* Element Selector */
+body {
+    font-family: cursive;
+    margin: 20px; /* Box Model: Margin */
+    background: url("naruto.jpg");
+    object-fit: cover;
+
+}
+
+/* Class Selector */
+.highlight {
+    background-color: rgb(156, 227, 255);
+    padding: 8px; /* Box Model: Padding */
+    border: 1px solid rgb(142, 82, 82); /* Box Model: Border */
+}
+
+/* ID Selector */
+#message {
+    width: 100%;
+    box-sizing: border-box; /* Box Model: Include padding and border in element's total width and height */
+}
+
+/* Table styling */
+table, th, td {
+    border: 8px solid rgb(131, 234, 255);
+    border-collapse: collapse;
+    padding: 6px;
+    tr{
+        background-color: #c0ffff97;
+      }
+}
+
+/* List styling */
+ul {
+    list-style-type: round;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
