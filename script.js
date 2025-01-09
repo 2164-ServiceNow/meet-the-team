@@ -17,7 +17,9 @@ setInterval(() => {
 //   event.preventDefault();
 //   console.log("submitted");
 // });
-submitForm.addEventListener("click", () => {
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("some text~");
   if (!emailInput.checkValidity()) {
     console.log(emailInput.checkValidity());
     console.log(emailError.classList);
@@ -37,6 +39,27 @@ submitForm.addEventListener("click", () => {
     form.submit();
   }
 });
+
+// submitForm.addEventListener("click", (event) => {
+//   if (!emailInput.checkValidity()) {
+//     console.log(emailInput.checkValidity());
+//     console.log(emailError.classList);
+//     emailError.classList.remove("d-none");
+//     emailError.classList.add("d-block");
+//     emailError.classList.add("invalid-feedback");
+
+//     emailInput.classList.add("is-invalid");
+//     console.log(emailError.classList);
+//   } else {
+//     emailError.classList.remove("d-block");
+//     emailError.classList.add("d-none");
+//     emailError.classList.remove("invalid-feedback");
+
+//     emailInput.classList.remove("is-invalid");
+//     console.log("Submitted");
+//     form.submit();
+//   }
+// });
 
 const hoverBox = document.getElementById("hover-box");
 
