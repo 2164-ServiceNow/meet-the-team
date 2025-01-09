@@ -40,4 +40,5 @@ gameForm.addEventListener("submit", event=>{
 
     gameTableBody.innerHTML += newTableRow
     gameImageBody.innerHTML += newImage
+    localStorage.setItem(`${gameName.value}`, `{gameName: ${gameName.value}, gamePlayers: ${gamePlayers.value}, gameTime: ${gameTime.value}, gameImage: ${gameImage.value}, gameAlt: ${gameAlt.value}`)
 })
