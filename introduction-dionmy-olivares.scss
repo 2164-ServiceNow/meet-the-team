@@ -1,0 +1,196 @@
+// Reset Styles
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1b1c1b;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// V-Card styles
+.vCard {
+    margin: 0 auto;
+    width: 850px;
+    background-color: #f0edec;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.07),
+        0 1px 2px rgba($color: #000000, $alpha: 0.15);
+
+    marquee {
+        margin: 16px 0;
+        color: white;
+        background-color: #d7392d;
+        font-weight: bold;
+    }
+
+    ul,
+    td {
+        font-size: 18px;
+    }
+
+    table {
+        margin: 0 8px;
+        text-align: left;
+    }
+
+    th,
+    td {
+        padding: 8px 16px;
+    }
+
+    th {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    td:first-child {
+        font-weight: bold;
+    }
+
+    &- {
+        &header,
+        &footer {
+            padding: 16px 24px;
+        }
+
+        &header {
+            padding-bottom: 8px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                font-weight: normal;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                position: absolute;
+                top: 0px;
+                right: 0;
+            }
+        }
+
+        &footer form > div {
+            display: flex;
+        }
+    }
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type='email'] {
+    padding: 8px 16px;
+    background-color: rgba($color: #000000, $alpha: 0.15);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    border-bottom: 1px solid #1b1c1b;
+}
+
+.is-invalid,
+.is-success {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.is-invalid {
+    color: #d7392d;
+}
+
+.is-success {
+    color: #009e74;
+}
+
+.Button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: #9e094e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
