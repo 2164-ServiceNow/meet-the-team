@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction - Amruth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center><h1>Naruto Uzumaki!</h1></center>
+    <center><h3>of Hidden Leaf Village</h3></center>
+    <p>Some fun facts about me are:</p>
+    <ul>
+        <li>I became a Hokage.</li>
+        <li>Have a Nine-Tailed Beast in me.</li>
+        <li>I've built peace in my village.</li>
+        <li>I have a brother hidden in shadows.</li>
+        <li>I have been training shinobi for over 10 years.</li>
+    </ul>
+    <marquee><button>Dattebayo!!!</button></marquee>
+    <center>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hobby Name</th>
+                    <th>Length in Years</th>
+                    <th>Why I do it?!</th>
+                </tr>
+            </thead>
+            <tbody id="hobbyTableBody">
+                <tr>
+                    <td>Helping</td>
+                    <td>25 years</td>
+                    <td>It's my wish to be helpful.</td>
+                </tr>
+                <tr>
+                    <td>Teaching</td>
+                    <td>10 years</td>
+                    <td>I like to build things from scratch with my hands.</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    <form id="hobbyForm">
+        <label for="hobbyName">Hobby Name</label>
+        <input id="hobbyName" placeholder="Type out Hobby Name Here" required />
+        <br />
+        <label for="hobbyLength">Length in Years</label>
+        <input id="hobbyLength" type="number" placeholder="Length you've done hobby" required />
+        <br />
+        <label for="hobbyWhy">Why I do it?!</label>
+        <input id="hobbyWhy" placeholder="Why do you do this hobby?" required />
+        <hr />
+        <label for="hobbyConfirm">Confirm you'd like to add this record?</label>
+        <input id="hobbyConfirm" type="checkbox" />
+        <br />
+        <label for="hobbyPass">Password</label>
+        <input id="hobbyPass" type="password" placeholder="Password to update info" />
+        <input type="submit" value="Add Hobby" />
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
