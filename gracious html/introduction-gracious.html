@@ -7,6 +7,7 @@
     <head>
         <title>ONLINE REGISTRATION</title>
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
         
@@ -19,7 +20,7 @@
         <br>
         <br>
         <left>
-        <form>
+        <form id ="myform">
             <label for="fname">First name:</label> &nbsp  &nbsp
             <input type="text" id="fname" placeholder = "enter your first name" name="fname"> &nbsp &nbsp
             <br>
@@ -32,12 +33,12 @@
             <input type="date" id="birthday"  name="birthday"> 
             <br> <br>
             <label for = "gender">Gender</label><br><br>
-            <label for="male">male:</label>
-            <input type="checkbox" id="male"  name="male"> 
-            <label for="female">female:</label>
-            <input type="checkbox" id="female"  name="female"> 
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="female">
             <label for="notdisclose">Not to disclose:</label>
-            <input type="checkbox" id="not disclose"  name="disclose"> 
+            <input type="radio" id="notdisclose" name="gender" value="notdisclose">
             <br>
             <br>
             <label for="phone">Phone number:</label>
@@ -50,6 +51,7 @@
                     <p>Deadline for submitting the form is 10/01/2025</p>
                 </marquee>
               </div>
+              <p id="dynamic-message"></p> 
 
 
 
@@ -58,6 +60,7 @@
         </form>
         </left>
     
+        <script src="gracious.js" ></script>
 
     </body>
 </html>    
