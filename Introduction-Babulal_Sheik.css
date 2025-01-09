@@ -1,0 +1,17 @@
+.ul-styling {
+    background-color: lightgoldenrodyellow;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.Main {
+    background-color: cadetblue;
+}
+
+.form {
+    background-color:darkgrey;
+}
+
+.form-floating mb-3 {
+    background-color: aqua;
+
+}
