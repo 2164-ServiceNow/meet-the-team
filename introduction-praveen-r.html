@@ -108,17 +108,21 @@
     
     <p class="styled-paragraph">The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics. The franchise also includes several television series, short films, digital series, and literature. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters.</p>
     
-    <marquee id="marquee-text" behavior="scroll" direction="left">Follow Me!</marquee>
+    <marquee behavior="scroll" direction="left"> <button id="marquee-text" onclick="showAlert()">Click Me</button></marquee>
+    <p id="button-message"></p>
 
-    <form>
+    <form id="contact-form">
         <label for="username">Name :</label>
         <input type="text" id="username" name="username"><br><br>
+        <span id="username-error" style="color:red; display:none;">Please enter a valid Name.</span>
 
         <label for="emailname">Email :</label>
-        <input type="email" id="emailname" name="email"><br><br>
+        <input type="email" id="emailInput" required /><br><br>
+        <span id="email-error" style="color:red; display:none;">Please enter a valid email address.</span>
 
         <label for="passwd">Password :</label>
         <input type="password" id="passwd" name="password"><br><br>
+        <span id="password-error" style="color:red; display:none;">Please enter a valid password.</span>
 
         <label for="city">Select :</label>
         <select name="city" id="city">
@@ -129,7 +133,6 @@
 
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
-        <button>Submit</button>
     </form>
 
     <table>
@@ -174,5 +177,16 @@
             </tr>
         </tbody>
     </table>
+
+    <div id="hover-box" style="width: 100px; height: 100px; background-color: lightblue;">Hover Over Me</div>
+
+    <h1>Local Storage Example</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button id="saveButton">Save to Local Storage</button>
+    <button id="loadButton">Load from Local Storage</button>
+    <button id="clearButton">Clear Local Storage</button>
+    <p id="output"></p>
+    
+    <script src="./script.js"></script>
 </body>
 </html>
