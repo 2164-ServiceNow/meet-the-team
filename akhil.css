@@ -21,6 +21,7 @@ table, th, td {
     padding: 5px;
 }
 
+
 ul {
     list-style-type: square;
 }
@@ -30,4 +31,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
 }
+
+
