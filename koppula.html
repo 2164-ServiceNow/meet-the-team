@@ -7,93 +7,93 @@
 <html>
     <!-- head element is the metadata -->
     <head>
-        <title>Look at this madman Charles</title>
+        <title>Indian Movie</title>
+        <link rel="stylesheet" href="koppula-style.css">
     </head>
     <!-- body element contains all of our content -->
     <body>
         <!-- header elements are from 1-6, where the higher the number the smaller the size of text -->
         <!-- alt + left-click adds additional cursors -->
-        <h1>Charles Albert Jester III, coding wizard!</h1>
-        <h3>of Philadelphia, Pennsylvania (Go Birds!)</h3>
+        <h1> Baahubali , Most Expensive Indian Flim at The Time !!</h1>
+        <h3>International Recognition !!</h3>
         <!-- paragraph element this is for blocks of text -->
-        <p>Some fun facts about me is:</p>
+        <p>Some fun facts about Movie !:</p>
         <!-- ordered list (ol) element is a list that counts each subsequent item or a numbered list -->
         <!-- unordered list (ul) element creating a bulleted list -->
         <ul>
-            <li>I have a black belt in Tae Kwon Do</li>
-            <li>Has a Bachelor's Degree in Biology</li>
+            <li>Massive Box Office Success</li>
+            <li>Prabhas Dedicated 5 Years</li>
             <!-- shift + alt + arrowkey (down or up) to copy a line of code in vscode-->
-            <li>I've built every peice of furniture in my room</li>
-            <li>I have a 90lb bernese mountain dog who will make an appearance in this</li>
-            <li>I have been training associates for over 3 years, and placed over 500 assocaites in all different forms of technology. Java with Spring boot, python, oracle sql to even automotive embedded systems</li>
+            <li>Custom-Made Weapons </li>
+            <li>Hollywood Level Visuals</li>
+            <li>Global Language Reach</li>
         </ul>
         
         <!-- marquee is an oldschool animation element for moving text acros a page -->
         <marquee>
             <!-- button with the text click -->
-            <button>Click Me!</button>
+            <button>Watch Movie!</button>
         </marquee>
 
         <!-- table element is as you'd expect a table to be, similar to an excel doc -->
         <table>
             <!-- thead element is the headers for each of the columns -->
-            <thead>
+            <thead style="background-color: lightblue; color: black;">
                 <!-- table header (th) element fills the content of a single column -->
-                <th>Hobby Name</th>
+                <th>Moive Name</th>
                 <th>Length in Years</th>
-                <th>Why I do it?!</th>
+                <th>Why I do  watch it?!</th>
             </thead>
-            <tbody>
+            <tbody id="movieTableBody">
                 <!-- table row (tr) element helps us differentiate each record in our table by starting a new row -->
                  <!-- table row acts a a block element, meaning it reserves an ENTIRE line of the web page for the content contained within -->
-                <tr>
+                <tr style="background-color: lightblue; color: black;">
                     <!-- table data (td) element is for EACH record in EACH column, goes in order of the columns listed in thead -->
                      <!-- table data is an INLINE element, meaning it wil continue to the end of the page before it starts a new line -->
-                    <td>Gaming</td>
-                    <td>25 years</td>
-                    <td>Advid gamer for my entire life, nice escape from reality</td>
+                    <td>Baahubali 1</td>
+                    <td>5 years</td>
+                    <td>Water fall scene took 109 Days</td>
                 </tr>
-                <tr>
-                    <td>Woodworking</td>
-                    <td>7 yrs</td>
-                    <td>I like to build things from scratch with my hands</td>
+                <tr style="background-color: lightblue; color: black;">
+
+                    <td>Baahubali</td>
+                    <td>5 yrs</td>
+                    <td>Insipired Them Parks and Meseum Thrones</td>
                 </tr>
             </tbody>
         </table>
 
         <!-- image element it is a self-closing tag, meaning you do not need another tag at the end-->
          <!-- src is an attribute to provide the source/resource to an image -->
-         <img src="./images/Image (1).jfif" alt="dog with stick in mouth running with ears flopped in the air"/>
-         <img src="./images/Image (2).jfif" alt="majestic dog laying in the grass"/>
-         <img src="./images/Image.jfif" alt="4 dogs hanging out and having some fun"/>
+         
+
 
          <!-- form element is just a container for any input element, to collect information and submit -->
-         <form>
+         <form id="movieForm">
             <!-- label is just text to be associated with an input or really anything -->
             <!-- for attribute binds the label to the named input, this must match the id attribute -->
-            <label for="hobbyName">Hobby Name</label>
-            <!-- placeholder atribute to fill in the empty space for our input field until an entry or text is added -->
-             <!-- id element is a UNIQUE identifier for a single element in an HTML doc -->
-            <input id="hobbyName" placeholder="Type out Hobby Name Here"/>
-            <br/>
+            <label for="MovieName" style="color: white;">Movie Name</label>
+        <input id="MovieName" placeholder="Type out Movie Name Here" />
+        <br/>
 
-            <label for="hobbyLength">Length in Years</label>
-            <input id="hobbyLength" placeholder="Length you've done hobby"/>
-            <br/>
+        <label for="MovieLength" style="color: white;">Length in Years</label>
+        <input id="MovieLength" placeholder="Time taken for Movie" />
+        <br/>
 
-            <label for="hobbyWhy">Why I do it?!</label>
-            <input id="hobbyWhy" placeholder="Why do you do this hobby?"/>
-            <hr/>
+        <label for="MovieWhy" style="color: white;">Why I do Watch it?!</label>
+        <input id="MovieWhy" placeholder="Why do you do watch this Movie?" />
+        <hr/>
 
-            <label for="hobbyConfirm">Confirm you'd like to Add this Record?</label>
-            <input id="hobbyConfirm" type="checkbox"/>
-            <br/>
+        <label for="MovieConfirm" style="color: white;">Confirm you'd like to Add this Record?</label>
+        <input id="MovieConfirm" type="checkbox" />
+        <br/>
 
-            <label for="hobbyPass">Password</label>
-            <input id="hobbyPass" type="password" placeholder="Password to update info"/>
+        <label for="MoviePass" style="color: white;">Password</label>
+        <input id="MoviePass" type="password" placeholder="Password to update info" />
 
-            <input type="submit"/>
+        <input type="submit" />
          </form>
+         <script src="./anand.js"></script>
          
     </body>
 </html>
