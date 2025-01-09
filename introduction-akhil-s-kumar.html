@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File</title>
+        <link rel="stylesheet" href="akhil.css">
+    </head>
+    <body>
+        <h1>AKHIL S KUMAR</h1>
+        <h3>of Kochi, Kerala</h3>
+        <p>Some fun facts about me are:</p>
+        <ul>
+            <li>I have a dog</li>
+            <li id="Display">I love cricket</li>
+        </ul>
+        <marquee>
+            <button onclick="updateDisplay()">Click Me!</button> 
+        </marquee>
+        <table>
+            <thead>
+                <tr>
+                    <th>SPORTS</th>
+                    <th>FAVOURITE</th>
+                </tr>
+            </thead>
+            <tbody id="sportTableBody">
+                <tr>
+                    <td>CRICKET</td>
+                    <td>MS DHONI</td>
+                </tr>
+                <tr>
+                    <td>FOOTBALL</td>
+                    <td>MESSI</td>
+                </tr>
+                <tr>
+                    <td>TENNIS</td>
+                    <td>FEDERER</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="c:\Users\aiswa\Downloads\msd.jpg" alt="MS DHONI"/>
+        <img src="c:\Users\aiswa\Downloads\messi.jpg" alt="MESSI"/>
+        <img src="c:\Users\aiswa\Downloads\federer.jpg" alt="FEDERER"/>
+        <form id="sportForm">
+            <label class="sport-label-font sport-label-background" for="SPORTS">SPORT</label>
+            <input class="sport-form-input" id="SPORTS" placeholder="Favourite sport"/>
+            <br/>
+            <label class="sport-label-font sport-label-background" for="FAVOURITE">SPORTPERSON</label>
+            <input class="sport-form-input" id="FAVOURITE" placeholder="Favourite person"/>
+            <br/>
+            <label class="sport-label-font sport-label-background" for="sportsConfirm">Confirm you'd like to Add this Record?</label>
+            <input class="sport-form-input" id="sportsConfirm" type="checkbox"/>
+            <br/>
+            <label class="sport-label-font sport-label-background" for="sportsPass">Password</label>
+            <input class="sport-form-input" id="sportsPass" type="password" placeholder="Password to update info"/>
+            <br/>
+            <input class="sport-form-input" type="submit"/>
+        </form>
+        <script src="akhil.js"></script>   
+    </body>
+</html>

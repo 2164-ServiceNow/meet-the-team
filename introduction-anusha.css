@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    color:black;
+    background-color: #267162;
+}
+h3 {
+    text-align: center;
+}
+
+/* Remove default list bullets */
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Style for individual list items */
+li {
+    padding: 10px 0; /* Add space between list items */
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+/* General table styling */
+table {
+    width: 80%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Merge borders for a clean look */
+    font-family: Arial, sans-serif; /* Set a readable font */
+}
+
+/* Header styling */
+thead th {
+    background-color: gray; /* Header background color */
+    color: white; /* Header text color */
+    padding: 10px; /* Space inside header cells */
+    text-align: left; /* Align header text */
+    border: 1px solid #ddd; /* Add border to header cells */
+}
+
+/* Body styling */
+tbody td {
+    padding: 10px; /* Space inside cells */
+    border: 1px solid #ddd; /* Add border to body cells */
+    text-align: left; /* Align text */
+}
+
+/* Alternate row background for readability */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for alternate rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
