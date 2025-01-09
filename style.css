@@ -1,15 +1,82 @@
-/* External CSS */
 body {
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    font-size: 2em;
-  }
-  
-  p {
-    font-size: 1.2em;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #0078D4;
+  color: white;
+}
+
+.profile {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+fieldset {
+  border: 1px solid #0078D4;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+legend {
+  color: #0078D4;
+  font-weight: bold;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0078D4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
