@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #f76b1c, #fceabb);
+    animation: backgroundAnimation 10s infinite alternate;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #ffffff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffd700;
+    animation: fadeIn 3s ease;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 80%;
+    max-width: 600px;
+}
+
+h2 {
+    color: #ffd700;
+    font-size: 1.8em;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Image Styling */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Interactive Hover Box */
+#hover-box {
+    width: 150px;
+    height: 150px;
+    background-color: #ffd700;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hover-box:hover {
+    background-color: #f76b1c;
+}
+
+/* Input Field */
+textarea, input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #f76b1c;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+/* Animations */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #ffe5ec, #ffccd5); /* Mild pink to light pink */
+    }
+    50% {
+        background: linear-gradient(135deg, #fbd3e9, #bbd0ff); /* Light pastel pink to soft lavender */
+    }
+    100% {
+        background: linear-gradient(135deg, #ffe5ec, #ffccd5); /* Mild pink to light pink again */
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

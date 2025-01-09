@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws - Dog Lovers' Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Happy Paws</h1>
+        <p>Your go-to place for everything dogs 🐾</p>
+    </header>
+
+    <main>
+        <!-- Dynamic Content -->
+        <section id="welcome-section">
+            <h2>Welcome, Dog Lover!</h2>
+            <p id="dynamic-message"></p>
+        </section>
+
+        <!-- Dog Tips Form -->
+        <section id="tips-form">
+            <h2>Share Your Dog Tips</h2>
+            <form id="contact-form">
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <span id="email-error" class="error-message">Please enter a valid email address.</span><br><br>
+
+                <label for="dog-tip">Your Tip for Dog Owners:</label><br>
+                <textarea id="dog-tip" name="dog-tip" rows="4" placeholder="Write your tip here..." required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Interactive Dog Image -->
+        <section id="dog-images">
+            <h2>TARA</h2>
+            <img id="dog-image" src="https://i.pinimg.com/236x/80/29/d6/8029d60e70a401d539c2b946dba68516.jpg" alt="A Happy Dog" width="300">
+        </section>
+
+        <!-- Interactive Buttons -->
+        <section id="fun-section">
+            <h2>Fun with Dogs</h2>
+            <button id="alert-button">Click for a Dog Fact!</button>
+            <p id="button-message"></p>
+        </section>
+
+        <!-- Dog Hover Box -->
+        <section id="interactive-box">
+            <h2>Hover for a Surprise</h2>
+            <div id="hover-box">Hover Over Me!</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Happy Paws | Made with ❤️ for Dog Lovers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
