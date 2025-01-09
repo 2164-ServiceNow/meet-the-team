@@ -10,20 +10,20 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
-    />
-    <style></style>
+    <script>
+      function showAlert() {
+        alert("Button Clicked with onClick!");
+        document.getElementById("button-message").textContent =
+          "Button was clicked";
+      }
+    </script>
   </head>
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <div class="container-sm">
       <div class="row">
         <div class="col">
           <h1 class="display-7">Anosh Parvez, Novice Programmer</h1>
+          <p id="dynamic-message"></p>
           <h2 class="display-9">
             Looking for some exciting new things to learn
           </h2>
@@ -45,8 +45,9 @@
           </ul>
           <hr />
           <marquee>
-            <button>Don' Click Me</button>
+            <button onclick="showAlert()">Don' Click Me</button>
           </marquee>
+          <p id="button-message"></p>
         </div>
         <!-- <div class="col"></div> -->
       </div>
@@ -76,9 +77,10 @@
         </table>
       </div>
       <hr />
-      <div class="row align-items-center">
+      <div id="hover-box" class="row align-items-center">
         <div class="col text-center">
           <img
+            id="my-image"
             src="./images/bunny.jpg"
             class="rounded mx-auto d-block w-25"
             alt="Milo and bunny, our two cats"
@@ -93,16 +95,31 @@
       </div>
       <hr />
       <div class="row mb-5 border border-black">
-        <form>
-          <h2 class="display-9">About your Hobby?</h2>
+        <h2 class="display-9">About your Hobby?</h2>
+        <form id="hobby-form">
           <div class="input-group flex-nowrap mb-3">
-            <span class="input-group-text" id="hobby">Hobby</span>
+            <span class="input-group-text">Hobby</span>
             <input
+              id="hobby"
               type="text"
               class="form-control"
               placeholder="Hobby Name"
               aria-label="Hobby Name"
               aria-describedby="addon-wrapping"
+            />
+          </div>
+          <div id="email-error" class="d-none">
+            Please enter a valid email address.
+          </div>
+          <div id="email-div" class="input-group flex-nowrap mb-3">
+            <span class="input-group-text">Email</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
             />
           </div>
 
@@ -165,13 +182,16 @@
             />
           </div>
           <hr />
-          <div class="input-group flex-nowrap mb-3">
-            <button type="submit" class="btn btn-primary">
-              Make Recommendation
-            </button>
-          </div>
+
+          <button id="formSubmit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
