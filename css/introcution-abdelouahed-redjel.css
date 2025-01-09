@@ -1,9 +1,29 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #333, #555);
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
 }
