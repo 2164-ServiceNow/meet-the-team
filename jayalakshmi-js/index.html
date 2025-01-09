@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Theme Form</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Dancing Script', cursive, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            color: #fff;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ff6f61;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        /* Form Styling */
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 2px dashed #ff6f61;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #e14b4b;
+            transform: scale(1.1);
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        /* Image Section */
+        .image-container {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .image-container img {
+            max-width: 200px;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            transform: scale(1.1) rotate(5deg);
+            filter: brightness(1.2);
+        }
+
+        /* Marquee Styling */
+        .marquee {
+            background: #ff6f61;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        /* Animation */
+        @keyframes heartBeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .animated-heart {
+            display: inline-block;
+            animation: heartBeat 1s infinite;
+            font-size: 1.5em;
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <h2>💖 Love-Themed Form 💖</h2>
+
+    <!-- Marquee with Love Quotes -->
+    <div class="marquee">
+        <marquee behavior="scroll" direction="left">
+            "Love is not about how many days, months, or years you have been together. It’s about how much you love each other every single day." 💕 
+            &nbsp;&nbsp;|&nbsp;&nbsp; 
+            "You are my today and all of my tomorrows." 💖
+        </marquee>
+    </div>
+
+    
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <div id="nameError" class="error"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <div id="emailError" class="error"></div>
+        <label for ="text">Message:</label>
+        <input type="text" id="Message" placeholder="Enter your message" required>
+
+        <button type="button" id="submitButton">Submit</button>
+    </form>
+
+    <div class="image-container">
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7DZJ0s48EPjr9CqYTcIYYMlZvRoRAKyqa-w&s" alt="Placeholder">
+        <div>
+            <button id="rotateButton">Rotate</button>
+            <button id="grayscaleButton">Grayscale</button>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById('submitButton').onclick = function () {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            let isValid = true;
+
+        
+            if (!name) {
+                document.getElementById('nameError').textContent = "Please enter your name to spread the love!";
+                isValid = false;
+            } else {
+                document.getElementById('nameError').textContent = "";
+            }
+
+            
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email || !emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = "We need a valid email to send love letters!";
+                isValid = false;
+            } else {
+                document.getElementById('emailError').textContent = "";
+            }
+
+            
+            if (isValid) {
+                alert("💖 Thank you for sharing the love, " + name + "! We’ve sent our warmest regards to " + email + ". 💌");
+            }
+        };
+
+        
+        const image = document.getElementById('image');
+        let rotation = 0;
+
+
+        document.getElementById('rotateButton').onclick = function () {
+            rotation += 90;
+            image.style.transform = `rotate(${rotation}deg)`;
+        };
+
+    
+        document.getElementById('grayscaleButton').onclick = function () {
+            if (image.style.filter === "grayscale(100%)") {
+                image.style.filter = "none";
+            } else {
+                image.style.filter = "grayscale(100%)";
+            }
+        };
+    </script>
+</body>
+</html>
