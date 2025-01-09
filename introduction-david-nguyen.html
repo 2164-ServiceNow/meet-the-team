@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction - David Nguyen</title>
+
+        <link rel="stylesheet" href="./styles.css" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+            crossorigin="anonymous">
+
+        <style>
+            ul, p {
+                background-color: lightskyblue;
+            }
+
+            /* h1, h3{
+                background-color: aqua;
+            } */
+
+            .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+            gap: 10px;
+            flex-direction: column;
+            }
+
+            .hobby-form-input {
+                background-color: aqua;
+            }
+
+            .hobby-label-font {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: large;
+                color: aliceblue
+            }
+
+        </style>
+    </head>
+    <body>
+        <h5 id="dynamic-message"></h5>
+        <h1>David Nguyen</h1>
+        <h3>of Orange County, California</h3>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous">
+        </script>
+
+        <p>Some fun facts are:</p>
+
+        <ul class="flex-container wrap">
+            <li class="flex-item">I am an avid gym goer of 7 years.</li>
+            <li class="flex-item">I have a Bachelor's Degree in Computer Science and Engineering.</li>
+            <li class="flex-item">I like games like maplestory and elden ring and valorant.</li>
+            <li class="flex-item">I love Vietnamese foods such as Pho and Bun Bo Hue.</li>
+        </ul>
+          
+        <table class="table table-striped table-success">
+            <thead class = "table-dark">
+                <th>Gym Exercises</th> 
+                <th>Rating (out of 100)</th>
+                <th>What does it workout?</th>
+            </thead>
+            <tbody id="exerciseTableBody">
+                <tr>
+                    <td>Bench Press 
+                        <img id ="myImage" width = "200" src="https://www.shutterstock.com/image-illustration/closegrip-barbell-bench-press-3d-600nw-430936051.jpg" />
+                    </td>
+                    <td>85</td>
+                    <td>Chest, Front Delts, Triceps</td>
+                </tr>
+                <tr>
+                    <td>Deadlift
+                        <img id ="myImage2" width = "200" src="https://hips.hearstapps.com/hmg-prod/images/romanian-dl-1582015033.jpg?crop=1.00xw:0.888xh;0,0.112xh&resize=980:*" />
+                    </td>
+                    <td>90</td>
+                    <td>Back, Core, Hamstrings</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+
+        <form id="exerciseForm">
+            <label class="exercise-label-font" for="exerciseName">Exercise Name</label>
+            <input class="exercise-form-input" id="exerciseName" placeholder="Input Exercise"/>
+            <br/>
+            
+            <label class="exercise-label-font" for="exerciseRating">Exercise Rating</label>
+            <input class="exercise-form-input" id="exerciseRating" type="range" step="10"/>
+            <br/>
+
+            <label class="exercise-label-font" for="exerciseTarget">What does it workout?</label>
+            <!-- <input class="exercise-form-input" id="exerciseTarget" placeholder="Muscles Targeted"/> -->
+            <select class="exercise-form-input" id="exerciseTarget">
+                <option value="Chest">Chest</option>
+                <option value="Back">Back</option>
+                <option value="Biceps">Biceps</option>
+                <option value="Triceps">Triceps</option>
+                <option value="Delts">Delts</option>
+                <option value="Core">Core</option>
+                <option value="Hamstrings">Hamstrings</option>
+                <option value="Quads">Quads</option>
+                <option value="Abs">Abs</option>
+            </select>
+            <br/>
+            
+            <label class="exercise-label-font" for="exerciseConfirm">Confirm to add this exercise </label>
+            <input class="exercise-form-input" id="exerciseConfirm" type="checkbox"/>
+            <br/>
+
+            <label class="exercise-label-font" for="exercisePassword">Password</label>
+            <input class="exercise-form-input" id="exercisePassword" type="password" placeholder="Password to update info"/>
+
+            <input class="exercise-form-input" type="submit"/>
+
+        </form>
+
+        <script src ="script.js"></script>
+
+    </body>
+</html>

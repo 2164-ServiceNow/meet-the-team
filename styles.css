@@ -1,0 +1,7 @@
+table, th, td, tr {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+    font-size: large;
+    border: solid;
+    border-color: black;
+}
