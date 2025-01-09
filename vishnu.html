@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Palette</title>
+    <center>
+    <h1>
+        color pallette
+    </h1>
+</center>
+    <style>
+        .color-palette-Container {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .color-box {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .text-container input[type="text"] {
+            width: 300px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="text-container">
+            <input type="text" id="text-input" placeholder="Enter text here" oninput="changeTextRandomColor()">
+        </div>
+    </center>
+    <br><br>
+    <center>
+        <div class="color-palette-Container">
+            <div class="color-box" style="background-color: violet" onclick="checkColorMatch('violet')"></div>
+            <div class="color-box" style="background-color: indigo" onclick="checkColorMatch('indigo')"></div>
+            <div class="color-box" style="background-color: blue" onclick="checkColorMatch('blue')"></div>
+            <div class="color-box" style="background-color: green" onclick="checkColorMatch('green')"></div>
+            <div class="color-box" style="background-color: yellow" onclick="checkColorMatch('yellow')"></div>
+            <div class="color-box" style="background-color: orange" onclick="checkColorMatch('orange')"></div>
+            <div class="color-box" style="background-color: red" onclick="checkColorMatch('red')"></div>
+        </div>
+    </center>
+    <br><br>
+  
+
+    <script>
+        function checkColorMatch(colour) {
+
+            var textInput = document.getElementById('text-input').style.color;
+           if(colour==textInput)
+           {
+            alert("successfull");
+            document.getElementById('text-input').value="";
+           }
+           else{
+            alert("try again");
+           }
+        }
+
+        function changeTextRandomColor() {
+            var colors = document.getElementsByClassName("color-box");
+            var randomColor = colors[Math.floor(Math.random() * colors.length)].style.backgroundColor;
+            document.getElementById("text-input").style.color = randomColor;
+        }
+    </script>
+</body>
+</html>
