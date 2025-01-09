@@ -1,0 +1,97 @@
+img {
+  height: 200px;
+}
+
+p {
+  text-align: center;
+}
+
+span {
+  color: rgb(17, 52, 84);
+}
+
+.title {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#intro {
+  background-color: rgb(129, 149, 149);
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+
+#tidbits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#facts {
+  background-color: rgb(131, 112, 148);
+  margin-top: 60px;
+  border: 2px solid rgb(63, 62, 62);
+  padding-right: 10px;
+  box-shadow: 2px 2px 2px;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+marquee {
+  margin-top: 15px;
+  color: brown;
+  font-size: x-large;
+}
+
+
+table {
+  border: 2px solid black;
+  background-color: rgb(197, 130, 106);
+}
+
+td {
+  border: 2px solid black;
+  background-color: rgb(156, 249, 160);
+  color: rgb(4, 77, 4);
+  font-size: larger;
+  padding: 10px;
+}
+
+ol>li {
+  font-size: larger;
+}
+
+ul {
+  background-color: rgb(211, 203, 193);
+  padding: 20px;
+}
+
+input {
+  background-color: rgb(202, 202, 202);
+}
+
+button {
+  background-color: rgb(202, 202, 202);
+  box-shadow: 3px 3px 3px;
+}
+
+@media (max-width:790px) {
+  #tidbits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width:595px) {
+
+  #info-container>h3 {
+    font-size: small;
+  }
+}
