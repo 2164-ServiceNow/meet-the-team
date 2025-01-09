@@ -23,8 +23,6 @@ const colors = [
 setInterval(() => {
   let currColor = colors[Math.floor(Math.random() * colors.length)];
   marquee.style.color = currColor;
-}, 500);
-
 //(date formatting code borrowed from internet)
 const formattedDate = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
@@ -36,6 +34,8 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
   timeZoneName: "short",
 }).format(Date.now());
 marquee.innerText = formattedDate;
+}, 500);
+
 
 const currentListening = [
   { artist: "Love", album: "Forever Changes", year: 1967 },
