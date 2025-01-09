@@ -58,6 +58,23 @@
         <hr/>
 
 
+        
+
+        <div id="hover-box" onmouseover=hover() style="width: 75px; height: 50px; background-color:pink;">Place your mouse here</div>
+
+        <button onclick="showAlert()">DO NOT CLICK ME!</button>
+
+        <form id="passwordForm">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button onclick="validPass()">Submit</button>
+          </form>
+          <p id="passwordError" style="color: red;"></p>
+          
+
+        <p id="oldTime">No time shown</p>
+        <button onclick="getTime()">Get the time</button>
+
         <form class="flex-center">
             <label for="favTeam">What is your favorite NFL team?</label>
             <input id="favTeam" placeholder="Type team here!"/>
@@ -79,6 +96,6 @@
             <input type="range" id="animal-like" name="animal-like" min="0" max="100" value="50">
         </form>
         
-
+        <script src="script.js"></script>
     </body>
 </html>
