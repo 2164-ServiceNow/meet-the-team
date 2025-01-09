@@ -1,3 +1,25 @@
+// dynamic message
+const messageElement = document.getElementById('dynamic-message');
+const currentTime = new Date();
+messageElement.textContent = `Welcome to my Page! The current time is: ${currentTime.toLocaleTimeString()} PST`;
+
+// image manipulation
+const image = document.getElementById('myImage');
+image.addEventListener('mouseover', () => {
+    image.width = "700";
+});
+image.addEventListener('mouseout', () => {
+    image.width = "200";
+});
+
+const image2 = document.getElementById('myImage2');
+image2.addEventListener('mouseover', () => {
+    image2.width = "700";
+});
+image2.addEventListener('mouseout', () => {
+    image2.width = "200";
+});
+
 // form document submission
 
 const exerciseForm = document.getElementById("exerciseForm")
@@ -17,16 +39,16 @@ exerciseForm.addEventListener('submit', (event)=>{
     const exerciseConfirmValue = exerciseConfirm.checked
     const exercisePasswordValue = exercisePassword.value
 
-    console.log(exerciseNameValue, exerciseRatingValue, exerciseTargetValue, exerciseConfirmValue, )
+    console.log(exerciseNameValue, exerciseRatingValue, exerciseTargetValue, exerciseConfirmValue, exercisePasswordValue)
 
-    if (exerciseConfirmValue && exercisePasswordValue === "123" && !exerciseNameValue ===""){
+    if (exerciseConfirmValue && exercisePasswordValue === "123" ){ //&& !exerciseNameValue === ""){
         let newExercise = `<tr>
-                                <td style="border: solid 3px">${exerciseNameValue}</td>
+                                <td style="table table-striped table-success">${exerciseNameValue}</td>
                                 <td>${exerciseRatingValue}</td>
                                 <td>${exerciseTargetValue}</td>
                            </tr>`
         exerciseTableBody.innerHTML += newExercise
     } else {
-        alert("broken code")
+        alert("Password is wrong")
     }
 })
