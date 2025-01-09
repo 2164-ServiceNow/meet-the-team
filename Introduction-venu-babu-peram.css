@@ -1,6 +1,6 @@
 /* This is a comment in CSS */
 
-table, th, td, tr {
+/* table, th, td, tr {
   font-family: fantasy;
   background-color: rgb(7, 172, 18);
   font-size: xx-large;
@@ -10,4 +10,69 @@ table, th, td, tr {
   margin: 100px;
   margin-bottom: 10px;
   padding: 0px 10px 15px 50px;
+} */
+
+.grid-containter{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+
+}
+.grid-item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+img{
+  width: 250px;
+  height: 200px;
+}
+/* h1,h2{
+  width: 200px;
+  height: 200px;
+} */
+
+.flex-container {
+  display: flex; /* Enables flexbox */
+  justify-content: space-around; /* Distributes space between items */
+  align-items: center; /* Vertically centers items */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+  padding: 20px;
+}
+
+/* Flex items */
+.flex-item {
+  background-color: #f1f2f2;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  flex: 1 1 20px;/* Makes each item flexible*/
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skills-section {
+  padding: 20px;
+  background-color: #e9ecef;
+}
+
+.flex1-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex1-item {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
 }

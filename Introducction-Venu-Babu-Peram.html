@@ -3,13 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venu HTML</title>
-  <link rel="style" href="Introduction-venu-babu-peram.css">
+  <title>About Venu Babu Peram</title>
+  <link rel="stylesheet" href="/Introduction-venu-babu-peram.css" />
   <style>
     /* element selector  */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Styling for the header */
+    #main-header {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 2.5em;
+    }
+
+    #sub-header {
+      text-align: center;
+      color: #34495e;
+      font-style: italic;
+      font-size: 1.5em;
+    }
+
+    /* Styling for the paragraph */
+    #intro-paragraph {
+      text-align: center;
+      color: #7f8c8d;
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    /* Styling for the list */
+    #fun-facts {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #fun-facts li {
+      color: #2c3e50;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    #fun-facts li:nth-child(odd) {
+      color: #2980b9;
+    }
+
+    #fun-facts li:nth-child(even) {
+      color: #e67e22;
+    }
     li {
         font-family: fantasy;
-        background-color: rgb(112, 52, 52);
+        background-color: rgb(150, 208, 43);
     }
 
     /* multi-element selector */
@@ -20,7 +74,7 @@
 
     /* id selector - id is more specifc so it take priority over class selectors*/
     #edu, #edu {
-        background-color: rgb(140, 27, 27);
+        background-color: rgb(243, 218, 218);
     }
 
     /* Class selector */
@@ -42,34 +96,76 @@
     td {
         border: solid 3px;
     }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    td {
+      font-size: 16px;
+    }
  </style>
 </head>
 <body>
-  <h1>I am Venu Babu Peram </h1>
-  <h2> From Andhra Pradesh, India</h2>
+  <h1 id="main-header">I am Venu Babu Peram</h1>
+  <h2 id="sub-header">From Andhra Pradesh, India</h2>
 
-  <p>Some fun facts about me is:</p>
-<ul>
-  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
-  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
-  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
-  <li>I enjoy solving Rubik's Cubes in my free time. It challenges my problem-solving skills and keeps my mind sharp and focused!</li>
-  <li>I am passionate about cricket</li>
-  <li>I am fan Kl Rahul</li>
-  <li>I am fan Kl Rahul</li>
-  <li>I am fan Kl Rahul</li>
-  <li>I am fan Kl Rahul</li>
-  <li>I am fan Kl Rahul</li>
-</ul>
-
-<marquee><button> Don't Click Me</button></marquee>
-<img src="./images/p1.jpg">
-<img src="./images/p2.jpg">
-<img src="./images/p3.jpg">
+  <p id="intro-paragraph">Some fun facts about me are:</p>
+  <ul id="fun-facts">
+    <li>I enjoy solving Rubik's Cubes in my free time.</li>
+    <li>I am passionate about cricket.</li>
+    <li>I am a fan of Kl Rahul.</li>
+  </ul>
+<marquee><button><div class="grid-container">
+  <img class="grid-item" src="./images/p1.jpg">
+<img class="grid-item" src="./images/p2.jpg">
+<img class="grid-item" src="./images/p3.jpg">
+<img class="grid-item" src="./images/p2.jpg">
+<img class="grid-item" src="./images/p3.jpg">
+<img class="grid-item" src="./images/p2.jpg">
+<img class="grid-item" src="./images/p3.jpg">
+</div></button></marquee>
 
 
-<h1>Education</h1>
-<table >
+
+
+<!-- <div class="flex-container">
+  <img class="flex-item" src="./images/p1.jpg">
+   <img class="flex-item" src="./images/p3.jpg">
+  <img class="flex-item" src="./images/p2.jpg">
+  <img class="flex-item" src="./images/p3.jpg">
+  <img class="flex-item" src="./images/p2.jpg">
+  <img class="flex-item" src="./images/p3.jpg">
+  </div> -->
+  
+
+
+<!-- <h1>Skills</h1> -->
+<section class="skills-section">
+  <h2>My Skills</h2>
+  <div class="flex1-container">
+    <div class="flex1-item">Web Development</div>
+    <div class="flex1-item">SQL</div>
+    <div class="flex1-item">Problem Solving</div>
+  </div>
+</section>
+<!-- <table >
   <thead>
     <th>College</th>
     <th> Year of Passing</th>
@@ -85,13 +181,48 @@
     <td>2020</td>
     <td>8.7</td>
   </tr>
+</table> -->
+
+<h1>Expreience</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Position</th>
+      <th>Year of Joining</th>
+      <th>Year of Leaving</th>
+      <th>Duration</th>
+      <th>Responsibilities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Revature</td>
+      <td>Intern</td>
+      <td>2025</td>
+      <td>Present</td>
+      <td>3 days</td>
+      <td>servicenow developer.</td>
+    </tr>
+    <!-- <tr>
+      <td>ABC Systems</td>
+      <td>Intern</td>
+      <td>2022</td>
+      <td>2023</td>
+      <td>1 Year</td>
+      <td>Assisted in software development and testing, gaining hands-on experience with front-end technologies.</td>
+    </tr> -->
+  </tbody>
 </table>
+
 <form>
   <label for="phone">Phone number</label>
   <input class="phone" placeholder="Enter Phone Number:">
   <br/>
   <label for="address">Address</label>
   <input placeholder="Enter Address"><br/>
+  <button> submit</button>
+
 
 </form>
 </body>

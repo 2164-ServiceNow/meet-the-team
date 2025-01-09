@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Grid Layout</title>
+    <style>
+      /* Basic styling for body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Grid container */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
+        gap: 20px; /* Space between grid items */
+        padding: 20px;
+      }
+
+      /* Grid item styling */
+      .grid-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Heading styles */
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      /* Text content styling */
+      p {
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Custom Grid Layout Example</h1>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>Item 1</h3>
+        <p>This is the first grid item. It takes up a flexible portion of the grid.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Item 2</h3>
+        <p>This is the second grid item. The layout automatically adjusts based on screen size.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Item 3</h3>
+        <p>This is the third grid item. It will adapt to different screen sizes without breaking.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Item 4</h3>
+        <p>This is the fourth grid item. The grid system will adjust and reorder items as needed.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Item 5</h3>
+        <p>This is the fifth grid item. It looks good on all screen sizes.</p>
+      </div>
+      <div class="grid-item">
+        <h3>Item 6</h3>
+        <p>This is the sixth grid item. The layout will remain responsive and maintain good spacing.</p>
+      </div>
+    </div>
+  </body>
+</html>
