@@ -1,0 +1,27 @@
+h1,h3{
+    text-align: center;
+
+}
+.Marquee{
+    background-color: rgb(12, 12, 12);
+    color: rgb(242, 233, 233);
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.para{
+    padding-left: 550px;
+}
+.photo{
+    width:100px;
+    border: 1px solid black;
+}
+.hobbytable{
+    padding-left: 550px;
+    background-color: rgb(190, 196, 194);
+}
+.form{
+    background-color: beige;
+    padding-left: 550px;
+}
+
