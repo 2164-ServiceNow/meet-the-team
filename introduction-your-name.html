@@ -12,7 +12,9 @@
   <body>
     <h1>Yerukondu Haritha, coding enthusiast!</h1>
     <h3>from Tirupati, Andhra Pradesh</h3>
-    <p style="color: blue; font-size: 16px">Some fun facts about me are:</p>
+    <p style="color: blue; font-size: 16px" id="dynamic-message">
+      Some fun facts about me are:
+    </p>
     <ul>
       <li>I am passionate about Java programming.</li>
       <li>I completed my MCA from SV University, Tirupati.</li>
@@ -25,7 +27,7 @@
     </ul>
 
     <marquee>
-      <button>Click Me!</button>
+      <button id="btn1" onclick="changeColor()">Click Me!</button>
     </marquee>
 
     <table>
@@ -56,14 +58,16 @@
       <img
         src="./images/penguin-158551_1280.png"
         alt="a cute penguin standing upright"
+        id="my-image"
       />
       <img
         src="./images/eggplant-2924511_1280.png"
         alt="a fresh eggplant resting on a wooden surface"
+        id="my-image1"
       />
     </div>
 
-    <form>
+    <form id="contact-form">
       <label for="hobbyName">Hobby Name</label>
       <input id="hobbyName" placeholder="Type out Hobby Name Here" />
       <br />
@@ -86,8 +90,14 @@
         type="password"
         placeholder="Password to update info"
       />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+      <span id="email-error" style="color: red; display: none"
+        >Please enter a valid email address.</span
+      >
 
-      <input type="submit" />
+      <button id="btn" onclick="showAlert()">Submit</button>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
