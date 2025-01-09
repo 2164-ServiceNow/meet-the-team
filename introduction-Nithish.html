@@ -1,57 +1,103 @@
-Name: Nithish Babu C
-From: India
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Box Model Example</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="introduction-Nithish.js"></script>
 </head>
 <body>
-  <!-- Body Content -->
-  <h1>Welcome </h1>
-  <p>This paragraph demonstrates the default styles applied to the body element.</p>
+  <header class="header">
+    <h1>About Me</h1>
+  </header>
 
-  <!-- Class Selector -->
-  <div class="highlight">
-    This section is highlighted using the "highlight" class.
-  </div>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
+     
+      <div class="about-text">
+        <h2>Hello, I'm NITHISH</h2>
+        <p>
+          Welcome to my personal page! 
+          I love exploring new things, solving problems, and creating innovative solutions.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <!-- ID Selector -->
-  <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+  <!-- Skills Section (Flexbox) -->
+  <section class="skills-section">
+    <h2>My Skills</h2>
+    <div class="flex-container">
+      <div class="flex-item">Web Development</div>
+      <div class="flex-item">Graphic Design</div>
+      <div class="flex-item">Problem Solving</div>
+      <div class="flex-item">Team Collaboration</div>
+    </div>
+  </section>
 
-  <!-- Table Styling -->
-  <h2>Table Example</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Item</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Apple</td>
-        <td>$1</td>
-      </tr>
-      <tr>
-        <td>Banana</td>
-        <td>$0.5</td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Portfolio Section (Grid) -->
+  <section class="portfolio-section">
+    <h2>My Projects</h2>
+    <marquee direction = "right" class = "items">
+    <div class="grid-container">
+      <div class="grid-item">Project 1</div>
+      <div class="grid-item">Project 2</div>
+      <div class="grid-item">Project 3</div>
+      <div class="grid-item">Project 4</div>
+      <div class="grid-item">Project 5</div>
+      <div class="grid-item">Project 6</div>
+    </div>
+</marquee>
+  </section>
 
-  <!-- List Styling -->
-  <h2>List Example</h2>
-  <ul>
-    <li>First Item</li>
-    <li>Second Item</li>
-    <li>Third Item</li>
-  </ul>
+  <!-- Experience Section (Table) -->
+  <section class="experience-section">
+    <h2>Experience</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Role</th>
+          <th>Organization</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023-2024</td>
+          <td>Frontend Developer</td>
+          <td>Tech Solutions</td>
+        </tr>
+        <tr>
+          <td>2022-2023</td>
+          <td>Graphic Designer</td>
+          <td>Creative Studio</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Intern</td>
+          <td>Innovate Labs</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-  <!-- Image Styling -->
-  <h2>Centered Image Example</h2>
-  <img src="images\example.jfif" alt="Sample Image">
+  <!-- Contact Section (Form) -->
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
 </body>
 </html>
