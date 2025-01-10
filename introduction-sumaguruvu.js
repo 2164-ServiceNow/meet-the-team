@@ -43,4 +43,4 @@ image2.addEventListener('mouseover',()=>{
 });
 image2.addEventListener('mouseout',()=>{
     image2.src="./Images/sw3.webp";
-})
+});
