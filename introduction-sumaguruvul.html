@@ -23,15 +23,18 @@
     <span style= "font-size:xx-large;">Strange World</span></h2>
    </div>
  <div id="div2">
+   <p id="dynamic-message"></p>
    <b><p>Fun Facts</p></b>
     <ul>
        <li> Small, gelatinous monster with seven legs </li>
        <li> Splat's arms and legs are interchangeable</li>
-       <li> Can roll around like wheel or walk on two legs. </li>
+       <li> Can roll around like wheel or walk on two legs </li>
     </ul>
-    <marquee><button>catch me!</button></marquee>
-    <img src="./Images/sw2.jpg" alt="splat it is" height="150px"  width="150px"/>
-    <img src="./Images/sw3.webp" alt="Strange World" height="150px"  width="150px"/> </br></br>
+    <marquee><button id="catchme" onclick="changeText()">catch me!</button></marquee>
+    <div id="div4">
+    <img id="image1" src="./Images/sw2.jpg" alt="splat it is" height="200px"  width="250px"/>
+    <img id="image2" src="./Images/sw3.webp" alt="Strange World" height="200px"  width="250px"/> </br></br>
+    </div></br>
     <table>
        <thead>
            <th>Film</th>
@@ -48,14 +51,17 @@
             </tr>
        </tbody>
    </table></br>
+   <p id="you">feel free to add your favourites^^</p>
    <div id="div3">
    <form id="form">
-      <label for="one"> what do you think?</label>
-      <input type="text" placeholder="shoot away" id="one" class="x"/><br/>
-      <label for="two"> Is splat good? </label>
-      <input type="text" placeholder="better be good" id="two"/><br/>
-      If yes,<input type="checkbox"/>
-      <input id="submit-button" onclick="changeText()" type="submit"/>
+      <label for="one" class="c1"> your favourite film?</label>
+      <input type="text" placeholder="shoot away" id="one" class="x"/>
+      <label for="two" class="c1"> character? </label>
+      <input type="text" placeholder="here" id="two" class="x"/><br/>
+      <label for="emailInput" class="c1">Email</label>
+      <span id="emailerror" style="color:red;display:none;">Enter valid email</span>
+      <input type="text" id="emailInput" class="x" placeholder="email here" required/></br></br>
+      <input id="submit-button" type="submit"/><br/> 
    </div>
    </div>
    </form>
