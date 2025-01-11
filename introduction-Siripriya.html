@@ -34,31 +34,41 @@
         </tbody>
         </table>
     </div>
-    <form>
-        <div class = "formgit">
+    <form id = "friendform">
+        <div class = "form">
             <h4>fill the form to be my frnd and get handmade accessories</h4>
         <div>
-            <label for="Name">Name: </label>
-        <input id="Name" placeholder="Type out your Name Here"/>
+        <label for="Name">Name: </label>
+        <input id="Name" type = "text" placeholder="Type out your Name Here" required/>
+        <span class = "error" id= "nameError"></span>
         </div>
         <div>
+            <label for="Name">Email: </label>
+            <input id="email" type ="email" placeholder="Email Address" required/>
+            <span class = "error" id= "emailError"></span>
+            </div>
+        <div>
             <label for="favhobby">Hobby</label>
-            <input id="favhobby" placeholder="your hobby"/>
+            <input id="favhobby" type = "text" placeholder="your hobby"/>
+            <span class = "error" id= "hobbyError"></span>
        </div>
         <div>
             <label for="hobbyWhy">Why I do it?!</label>
             <input id="hobbyWhy" placeholder="Why do you do this hobby?"/>
         </div>
         <div>
-            <label for = "movies">Do you like movies</label>
-            <input id = "yesorno" type="checkbox"/>
-            <p>you don't have any other option you should check it to be my friend </p>
+            <label for = "movies">Do you like movies?</label>
+            <input id = "yesorno" type="checkbox" required/>
+            <span class="error" id="moviesError"></span>
+            <p style = "color:rgb(67, 32, 32)">you don't have any other option you should check it to be my friend </p>
         </div>
-        <input type="submit"/>
+        <input type="submit" value = "submit"/ onclick="submitform()">
+        <p class = "success" id="successMessage"></p>
         </div>
         
         </form>
-    
+        <script src = "script.js"></script>
+
 </body>
 
 </html>

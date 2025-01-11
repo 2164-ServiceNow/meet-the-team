@@ -19,9 +19,19 @@ h1,h3{
 .hobbytable{
     padding-left: 550px;
     background-color: rgb(190, 196, 194);
+    margin-bottom: 0px;
 }
 .form{
-    background-color: beige;
+    background-color: rgb(158, 158, 68);
     padding-left: 550px;
-}
-
+  }
+  
+  .error {
+      color: red;
+      font-size: 0.9em;
+  }
+  .success {
+      color: green;
+      font-size: 1em;
+      margin-top: 10px;
+  }
