@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>About me</title>
+</head>
+<body>
+
+    <h1>Lalithya Kalluru</h1>
+    <h2> Andhra Pradesh, India</h2>
+    <img src="D:\STUDY\webimg\la.jpg" alt="Lalithya Picture">
+    <p>I have graduated in Computer Science and Engineering</p>
+    <h2>  LANGUAGES I KNOW </h2>
+	<ol>
+		<li>SQL</li>
+		<li>Java</li>
+		<li>Web Development</li>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+		</ul>
+		<li>SDLC</li>
+		<li>Git</li>
+	</ol>
+    <h2>Fun Facts Abou me </h2>
+	<ul>
+		<li> I love painting-it's my way of relaxing and expressing creativity</li>
+		<li> Cooking new recipes is my go-to adventure in the kitchen </li>
+		<li> I'm sensitive and super emotional, which helps me connect deeply with others </li>
+	</ul>
+    <h3><marquee behavior="scroll" direction="right" scroll amount="6" align="center">Join Me for Cooking or Share Your Recipes!</marquee></h3>
+    <p>If you love cooking, let's make something delicious together! Or, if you have any cool recipes to share, feel free to suggest them!</p>
+
+    <h4>Option 1: Join Me for Cooking</h4>
+    <form action="mailto:someone@example.com?subject=Join Me for Cooking" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Join Now">
+    </form>
+
+    <h4>Option 2: Suggest a Recipe</h4>
+    <form action="mailto:someone@example.com?subject=Recipe Suggestion" method="post" enctype="text/plain">
+        <label for="recipe">Recipe Name:</label><br>
+        <input type="text" id="recipe" name="recipe" required><br><br>
+        
+        <label for="type">Type of Dish:</label><br>
+        <select id="type" name="type" required>
+            <option value="Main Course">Main Course</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Appetizer">Appetizer</option>
+            <option value="Snack">Snack</option>
+        </select><br><br>
+
+        <label for="ingredients">Ingredients:</label><br>
+        <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="message">Message (optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Suggest Recipe">
+    </form>
+</body>
+</html>
