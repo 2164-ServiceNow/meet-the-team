@@ -1,0 +1,157 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E0F7FA;
+    margin: 0;
+    padding: 0;
+    color: #424242; 
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #039BE5; 
+}
+h1 {
+    font-size: 42px;
+    margin-top: 30px;
+    color: #039BE5; 
+}
+h2 {
+    font-size: 28px;
+    color: #F48FB1;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid #F48FB1; 
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+li {
+    font-size: 20px;
+    margin: 8px 0;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+li:hover {
+    color: #F48FB1; 
+}
+.marquee {
+    background-color: #80E27E; 
+    color: #333;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+form {
+    background-color: #F5F5F5;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+label {
+    font-size: 16px;
+    color: #333;
+}
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #039BE5;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+    border-color: #F48FB1; 
+}
+input[type="submit"] {
+    background-color: #80E27E;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #66BB6A; 
+}
+.form-section {
+    margin-bottom: 40px;
+}
+.form-section:last-child {
+    margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .container {
+        padding: 15px;
+    }
+    img {
+        max-width: 200px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+h3, h4 {
+    background-color: #039BE5; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+input[type="submit"]:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#fun-facts li {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+#join-form-section, #recipe-suggest-form-section {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
