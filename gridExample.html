@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height: 60vh;
+            width: 60vh;
+            grid-template-rows: 10% 20% 60% 10%;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .header{
+            background-color: blue;
+            grid-column: 1/5;
+ 
+        }
+        .smallbox1{
+            background-color: blueviolet;
+        }
+        .smallbox2{
+            background-color: #37e22b;
+        }
+        .smallbox3{
+            background-color: #6ebbe7;
+        }
+        .maincontent{
+            background-color: cadetblue;
+            grid-column:1/4;
+        }
+        .sidebar{
+            background-color: chartreuse;
+           grid-row:2/4;
+           grid-column:4/5 ;
+        }
+        .footer{
+            background-color: brown;
+            grid-column: 1/5;
+        }
+        div{
+            margin: 5px 5px 5px 5px;
+        }
+        .container>div{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        #outercontainer{
+            display: flex;
+            justify-content: center;
+            margin-top: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outercontainer">
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="smallbox1">smallbox</div>
+        <div class="smallbox2">smallbox</div>
+        <div class="smallbox3">smallbox</div>
+        <div class="sidebar">side bar</div>
+        <div class="maincontent">maincontent</div>
+        <div class="footer">Footer</div>
+    </div>
+</div>
+</body>
+</html>
